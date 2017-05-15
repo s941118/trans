@@ -1,0 +1,75 @@
+@charset "UTF-8";
+// ========= 客製化區 =========
+@import 'custom_style/variables'; // 變數
+// ========= base =========
+@import 'base/reset'; // doppler reset
+@import 'base/dophlex'; // dopplex
+// ========= element =========
+@import 'element/btn'; // btn & calltoaction
+// ========= module =========
+@import 'module/header';
+@import 'module/nav';
+@import 'module/container';
+
+
+body {
+	background-color: #000;
+}
+
+img {
+	width: 100%;
+}
+
+.wrap {
+	font-size: 0;
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: $header-height;
+}
+
+nav, .container {
+	display: inline-block;
+	height: calc( 100vh - #{$header-height} );
+}
+
+nav {
+	width: $nav-width;
+	position: relative;
+	transition: .3s ease;
+	background-color: #000;
+	
+	@media screen and (max-width: 768px) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateX(-100%);
+	}
+
+}
+
+.container {
+	width: calc( 100% - #{$nav-width} );
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+}
+
+/// scroll bar
+*::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #000;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: $main;
+}

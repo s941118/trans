@@ -1,0 +1,20 @@
+[class*='btn'] {
+	cursor: pointer;
+	user-select: none;
+  text-align: center;  
+}
+
+.link-btn {
+	background-color: $main;
+	color: rgba(0,0,0,.8);
+	border-radius: 30px;
+	line-height: 25px;
+	font-size: 13px;
+	width: 100px;
+	opacity: .85;
+	transition: .3s ease;
+
+	&:hover {
+		opacity: 1;
+	}
+}

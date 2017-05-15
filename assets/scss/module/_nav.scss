@@ -1,0 +1,27 @@
+nav {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	font-size: 15px;
+	color: $main;
+	box-shadow: 1px 0 0 0 $main-border;
+}
+
+.nav-bg {
+	position: absolute;
+	width: 90%;
+	right: 0;
+	bottom: 30px;
+}
+
+.nav-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 25px auto;
+}
+
+.link-icon {
+	margin-right: 25px;
+	font-size: 15px;
+	opacity: .7;
+}
