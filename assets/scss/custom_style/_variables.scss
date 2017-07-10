@@ -1,10 +1,11 @@
 ///
 $main: #BDC0D1;
-$main-border: rgba(189, 192, 209, .2);
+$main-border: rgba(189, 192, 209, .2); //就是一個常用的顏色～
+$contentTitle:#26CAD3;
 
 // layout
 $nav-width: 240px;
-$header-height: 95px;
+$header-height:62px;
 
 /// flex
 $flex-child-spacing: 10px;
@@ -15,9 +16,9 @@ $breakpoint-nav-transform: $breakpoint-small;
 
 
 /// font-family
-$p100: PingFangTC-Ultralight, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p200: PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p300: PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p400: PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p500: PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p100: BasicSansAlt-ExtraLight,PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+$p200: url(../assets/font/BasicSansAlt-Light.otf),PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p300: url(../assets/font/BasicSansAlt-Regular.otf),PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p400: url(../assets/font/BasicSansAlt-SemiBold.otf),PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p500: url(../assets/font/BasicSansAlt-ExtraLight.otf),PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
 $p600: PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
