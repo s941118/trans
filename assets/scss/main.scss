@@ -12,6 +12,10 @@
 @import 'module/mobile-nav';
 @import 'module/container';
 @import 'module/footer';
+// ========= layout =========
+@import 'layout/about';
+@import 'layout/speakers';
+@import 'layout/agenda';
 
 
 
@@ -33,6 +37,11 @@ img {
 [class*="img-bg-"] {
 	background-position: center;
 	background-repeat: no-repeat;
+	// background-attachment: fixed;
+
+	// @media screen and (max-width: 992px) {
+	// 	background-attachment: scroll;		
+	// }
 }
 
 .img-bg-cover {
@@ -43,6 +52,28 @@ img {
 	background-size: contain;
 }
 
+.pic1 {
+	height: 250px;
+	overflow: hidden;
+}
+
+.main_title {
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	z-index: 3;
+	top: -20px;
+	left: 0;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px 20px;
+}
+
+.wrapper {
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
 //=========首頁
 .wrap {
 	font-size:0;
@@ -51,20 +82,20 @@ img {
 	height: 100vh;
 }
 
-.wrap .title{
+.wrap .title {
 	font-size:37px;
 	line-height: 40px;
 	padding: 10vw;
 
 }
 
-.little_title{
+.little_title {
 	font-size:15px;
 	line-height: 15px;
 	margin: -35px 0px 0px 150px;
 }
 
-.pic_TRANS{
+.pic_TRANS {
 	margin: -550px 0px 0px 50vw; 
   position: relative;
   width: 35vw;
@@ -191,92 +222,8 @@ img {
 
 
 
-//=========about===========
-.about{
-	font-size:30px;
-	background-image: src("../img/about/bg.png");
-	background-size: cover;
-	position: relative;
-}
-
-.pic1 {
-	height: 250px;
-	overflow: hidden;
-}
-
-.about_title{
-	float: left;
-	font-size: 20px;
-	position: relative;
-	background-color: #000000;
-	color:#ffffff;
-	margin: -20px 0 0 100px;
-	padding:20px 20px;
-	
-}
-
-// .about_content img{
-// 	width: 20%;
-// }
-
-.about_content{
-	position: relative;
-	font-size: 14px;
-	color:#ffffff;
-	margin: 10vh 10vw;
-	background-color: blue;
-	padding: 83px 137px;
-	line-height: 25px;
-	border-radius: 10px;
-}
-
-.content_title{
-	font-size: 14px;
-	color:$contentTitle;
-	padding: 58px 0 24px 0;
-}
-
-
-.about_content_2{
-	position: relative;
-	font-size: 14px;
-	margin: 10vh 10vw;
-	color:#ffffff;
-	background-color: blue;
-	line-height: 25px;
-	border-radius: 10px;
-}
-
-.content_title_2{
-	font-size: 14px;
-	color:$contentTitle;
-}
-
-
-.about_contnet_L{
-	display: inline-block;
-	margin: 2%;
-	width: 40%;
-	background-color: white;
-}
-
-.about_contnet_L img{
-	width: 60%;
-	display:block; 
-	margin:auto;
-}
-
-.about_contnet_R{
-	display: inline-block;
-	width: 40%;
-	background-color: green;
-	padding: 58px 129px 10px 40px;
-}
-
-
-
 //=========FAQ
-#FAQ{
+#FAQ {
 	margin: 10vh 10vw;
 	font-family: $p300;
 }
