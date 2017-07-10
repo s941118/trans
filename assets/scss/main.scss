@@ -29,6 +29,20 @@ img {
 	width: 100%;
 }
 
+
+[class*="img-bg-"] {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-bg-cover {
+	background-size: cover;
+}
+
+.img-bg-contain {
+	background-size: contain;
+}
+
 //=========首頁
 .wrap {
 	font-size:0;
@@ -185,14 +199,9 @@ img {
 	position: relative;
 }
 
-.pic1{
+.pic1 {
 	height: 250px;
 	overflow: hidden;
-
-	img{
-		margin: -300px 0 0 0 ;
-
-	}
 }
 
 .about_title{
@@ -322,18 +331,63 @@ img {
 
 
 
+//======partner
+.partner {
+	margin: 110px 10vw 10vh 10vw;
+}
 
+.partner_title {
+	color:#000000;
+	font-size: 44px;
+	margin-bottom: 26px;
+	text-align: left;
+}
 
+.partner_line {
+	
+}
 
+.partner_name {
+	color:#CACACA;
+	background-color: #ffffff;
+	border-radius: 20px;
+	opacity: .7;
+	transition: .3s ease;
+	padding: 20px;
+	box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, .15);
 
+	&:hover {
+		opacity: 1;
+		transform: translateY(-3px);
+		box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, .05);
 
+	}	
+}
+
+.partner_wrap {
+	position: relative;
+}
+
+.partner_btn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	padding: 20px;
+	z-index: 2;
+	transform: translate3d(0, 0, 0);
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+	}
+}
 
 //=========2016Review
-.TRANSReview{
+.TRANSReview {
 	width: 100%;
 }
 
-.ReviewTitle{
+.ReviewTitle {
 	position: absolute;
 	color: #ffffff;	
 	font-size: 47px;
