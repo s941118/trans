@@ -19,23 +19,6 @@ $(window).load(function() {
 
 
 
-	/// video 對應不同的 detail 頁面
-	/// 因為不想讓 iframe 一開始全部都載入，所以用 data-src 去識別做控制
-  $('.video-box').click(function(){
-    var t = $(this).data('pop')
-    var $content = $('#video-pop .content[data-pop="' + t + '"]')
-    var $src = $content.find('iframe').data('src')
-    $('#video-pop').fadeIn(300);
-    $content.addClass('active');
-    $content.find('iframe').attr('src', $src)
-    $('.container').css('overflow', 'hidden');
-  })
-
-  $('.go-back-btn').click(function(){
-  	$('#video-pop').fadeOut(300);
-  	$('.container').css('overflow', 'auto');
-  })
-
   //FAQ展開的部分
 	$(".faq-q").click( function () {
 	  var container = $(this).parents(".faq-c");
@@ -54,9 +37,11 @@ $(window).load(function() {
 
 	// CommunityPartner
 	let target 
+	
 	$(window).bind('resize', function () {
 		target = $('#partner_link').offset().top
 	}).resize()
+
 	$(window).bind('scroll', function () {
 		let whereAmI = $(this).scrollTop()
 		if ( whereAmI < target ) {
@@ -66,6 +51,10 @@ $(window).load(function() {
 			$('#partner_link').addClass('fixed')
 		}
 	}).scroll()
+
+
+
+	
 
 })
 

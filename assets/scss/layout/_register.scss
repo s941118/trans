@@ -1,0 +1,85 @@
+
+
+.top {
+	margin: 112px 10vw 100px 10vw;
+	width: 100%;	
+
+	.top_title {
+		margin-bottom: 91px;
+		font-size: 40px;
+		color: black;
+		
+	}
+	.top_content {
+		line-height: 30px;
+
+		.top_content_text {
+			display: inline-block;
+			color: black;
+			font-size: 16px;
+			margin-left: 5px;
+		}
+
+		img {
+			display: inline-block;
+			width: 1.2%;
+			
+		}
+	}
+}
+
+.register_title {
+	margin:72px 0 20px 112px;
+	font-size: 28px;
+	color: black;
+}
+
+.register-table {
+	margin-left: 72px;
+	margin-bottom: 100px;
+
+	.tr {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 17px 0;
+		box-shadow: 0 1px 0 0 rgba(0, 0, 0, .3);
+		font-size: 14px;
+	}
+	
+	.th{
+		box-shadow: 0 1px 0 0 rgba(0, 0, 0, .6);
+	}
+
+	.tr-sale {
+		flex: 0 0 70px;
+		img {
+			width: 50px;
+		}
+	}
+	
+	.tr-name {
+		flex: 0 0 600px;
+		font-size: 14px;
+		text-align: left;
+	}
+
+	.tr-origin {
+		flex: 0 0 150px;
+		font-size: 14px;
+		.currency {
+			display:inline-flex;
+			font-size: 12px;
+		}
+	}
+
+	.tr-pirce {
+		flex: 0 0 200px;
+		font-size: 14px;
+		.currency {
+			display:inline-flex;
+			font-size: 12px;
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+.top {
+  margin: 112px 10vw 100px 10vw; }
+  .top .top_title {
+    margin-bottom: 91px;
+    font-size: 40px;
+    color: black; }
+  .top .top_content .top_content_text {
+    color: black;
+    font-size: 16px;
+    margin-left: 10px; }
+  .top .top_content img {
+    width: 10%; }
