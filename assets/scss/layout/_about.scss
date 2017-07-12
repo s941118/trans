@@ -1,6 +1,6 @@
+
 .about {
 	font-size:30px;
-	background-image: src("../img/about/bg.png");
 	background-size: cover;
 	position: relative;
 }
@@ -8,13 +8,13 @@
 .about_content {
 	position: relative;
 	font-size: 14px;
-	color: #ffffff;
+	color: #000000;
 	width: 100%;
 	margin: 10vh auto;
-	background-color: blue;
 	padding: 83px 137px;
 	line-height: 25px;
 	border-radius: 10px;
+	text-align:justify;
 }
 
 .content_title {
@@ -25,37 +25,100 @@
 
 
 .about_content_2 {
-	position: relative;
 	font-size: 14px;
-	margin: 10vh 10vw;
-	color:#ffffff;
-	background-color: blue;
-	line-height: 25px;
+	margin: 10vh 0;
+	color:#000000;
+	line-height: 16px;
 	border-radius: 10px;
+	width: 100%;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 70, .15);
 }
 
 .content_title_2 {
 	font-size: 14px;
 	color: $contentTitle;
+	margin:24px 0px;
 }
 
-
-.about_contnet_L{
+.about_contnet_L {
 	display: inline-block;
-	margin: 2%;
-	width: 40%;
-	background-color: white;
+	padding: 20vh 12%;
+	img {
+		width: 236px;
+	}
 }
 
-.about_contnet_L img{
-	width: 60%;
-	display:block; 
-	margin:auto;
-}
-
-.about_contnet_R{
+.about_contnet_R {
+	text-align:justify;
+	font-size: 14px;
 	display: inline-block;
-	width: 40%;
-	background-color: green;
-	padding: 58px 129px 10px 40px;
+	padding: 58px 129px 58px 40px;
 }
+
+.about_subtitle {
+	font-size: 45px;
+	margin: 10vh 0;
+}
+
+
+.about_data {
+	width: 100%;
+
+	.about_data_info {
+		width:100%;
+		max-width: 1010px;
+		margin:0 auto;
+
+		.about_data_content {
+			display: inline-block;
+			margin: 100px 0 ;
+			text-align: center;
+			img { 
+				width: 25%;
+			}
+			.about_data_number{
+				font-size: 36px;
+				color:white;
+			}
+			.about_data_text{
+				font-size: 17px;
+				color:white;
+			}
+		}
+	}
+}
+
+.about_content_3 {
+	width: 100%;
+	margin: 10px 0;
+
+	.about_contnet3_L {
+		
+		img{
+			width: 100%;
+		}
+	}
+
+	.about_contnet3_R {
+		
+		img{
+			width: 100%;
+		}
+	}
+
+	.about_contnet3_text{
+		padding:12% 0 0 3%;
+		text-align: center;
+	}
+
+	.about_contnet3_title {
+		font-size: 24px;
+	}
+
+	.about_contnet3_content {
+		font-size: 14px;
+
+	}
+	
+}
+
