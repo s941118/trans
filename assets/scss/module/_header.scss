@@ -102,11 +102,146 @@ header {
 	}
 }
 
-#register{
-	background-color: #000000;
+.navbar-toggle {
+	cursor: pointer;
+	padding: 8px;
+	padding-right: 9px;
+	text-align: center;
+	background: white;
+	float: right;
+	width: 40px;
+	height: 50px;
+}
+
+.navbar-toggle > .icon-bar {
+	position: absolute;
+	display: block;
+	background: black;
+	width: 22px;
+	height: 5px;
+	border-radius: 1px;
+	margin: 0;
+}
+
+.navbar-toggle > .icon-bar:nth-child(1) {
+	top: 9px;
+}
+
+.navbar-toggle > .icon-bar:nth-child(2) {
+	top: 23px;
+}
+
+.navbar-toggle > .icon-bar:nth-child(3) {
+	top: 37px;
+}
+
+.nav > .nav-mask {
+	display: none;
+	transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+	.navbar-toggle {
+		display: none;
+	}
+
+	.nav > .nav-mask, .nav.toggled > .nav-mask {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.navbar-toggle * {
+		transition: all 0.5s ease-in-out;
+	}
+
+	.nav.toggled > .navbar-toggle {
+		position: fixed;
+		z-index: 3;
+		right: 0;
+		top: 0;
+		width: 39px;
+		height: 48px;
+	}
+
+
+	.nav.toggled > .navbar-toggle > span:nth-child(odd) {
+		position: absolute;
+		transform: rotate(45deg);
+		transform-origin: center;
+		right: 10px;
+		top: 19px;
+	}
+
+	.nav.toggled > .navbar-toggle > span:nth-child(even) {
+		position: absolute;
+		transform: rotate(-45deg);
+		transform-origin: center;
+		right: 10px;
+		top: 19px;
+	}
+
+	.nav.toggled > .nav-mask {
+		position: fixed;
+		float: left;
+		display: block;
+		background: white;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		left: 0;
+		top: 0;
+		opacity: 1;
+	}
+
+	nav > ul {
+		display: none;
+	}
+
+	nav.toggled > ul {
+		display: table-cell;
+		text-align: center !important;
+		position: fixed;
+		z-index: 3;
+		left: 0;
+		top: 30px;
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+
+
+	nav.toggled > ul > li.hidden-on-small {
+		display: none;
+	}
+
+	nav.toggled > ul > li {
+		display: block;
+		height: 70px;
+	}
+
+	#register {
+		display: inline;
+		text-align: center !important;
+		vertical-align: middle;
+		width: 300px;
+		height: 100px;
+		padding: 20px;
+		top: 30px;
+	}
+
+	#register * {
+
+	}
+}
+
+#register {
+	background-color: black;
 	color: white;
-	&:hover{
-		color: #000000;
+	&:hover {
+		color: black;
 		background-color: white;
 		transition: background-color  .5s ease;
 	}
