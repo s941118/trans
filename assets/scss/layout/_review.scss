@@ -1,0 +1,36 @@
+.TRANSReview {
+	width: 100%;
+}
+
+.ReviewTitle {
+	font-family: $p200;
+	position: absolute;
+	color: #ffffff;	
+	font-size: 47px;
+	line-height: 47px;
+	margin: 100px 0 0 10vw;
+	z-index: 3;
+}
+
+.TRANS_img {
+
+}
+
+.TRANS_img_content {
+	background-color: #000000;
+	width: 100%;
+	a {
+			img{
+				object-fit: contain;
+    		overflow:hidden; 
+    	} 
+	}
+}
+
+.mouse {
+	position: absolute;
+	font-size: 12px;
+	font-family: $p200;
+	color:white;
+
+}

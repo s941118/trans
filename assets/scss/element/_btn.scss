@@ -19,6 +19,7 @@
 }
 
 .register_btn{
+
 	font-size: 14px;
 	background-color: #ffffff;
 	width: 300px;
@@ -54,6 +55,7 @@
 }
 
 .register2_btn{
+	font-family: $p500;
 	font-size: 15px;
 	background-color: #ffffff;
 	width: 457px;
@@ -71,6 +73,8 @@
 }
 
 .register_float_btn{
+	font-family: $p600;
+	font-size: 19px;
 	position: fixed;
 	height: 118px;
 	width: 118px;

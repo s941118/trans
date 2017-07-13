@@ -6,6 +6,10 @@ header {
 	z-index: 2;
 	position: relative;
 
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
 	.logo, a {
 		height: 100%;
 		width: auto;
@@ -36,7 +40,7 @@ header {
 
 
 .nav {
-	font-family: $p100;
+	font-family: $p200;
 	font-size: 14px;
 	margin: 0 0 0 auto; //靠左ＱＱ
 }
@@ -68,9 +72,8 @@ header {
 	padding: 0 10px;
 	box-sizing: border-box;
 	color: #000000;
-	letter-spacing: 1px;
+	letter-spacing: 0.2px;
 	text-align: center;
-	font-family: $p600;
 	font-weight: 600;
 }
 
@@ -103,6 +106,7 @@ header {
 }
 
 #register{
+	font-family: $p200;
 	background-color: #000000;
 	color: white;
 	&:hover{

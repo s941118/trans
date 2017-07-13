@@ -19,6 +19,7 @@
 }
 
 .content_title {
+	font-family: $p100;
 	font-size: 14px;
 	color: $contentTitle;
 	padding: 9% 0 4% 0;
@@ -26,6 +27,7 @@
 
 
 .about_content_2 {
+	font-family: $p100;
 	font-size: 14px;
 	margin: 10vh 0;
 	color:#000000;
@@ -60,8 +62,9 @@
 }
 
 .about_subtitle {
+	font-family: $p600;
+	width: 40%;
 	font-size: 45px;
-	margin: 10vh 20vw;
 }
 
 
@@ -81,10 +84,12 @@
 				width: 25%;
 			}
 			.about_data_number { 
+				font-family: $p600;
 				font-size: 36px;
 				color:white;
 			}
 			.about_data_text {
+				font-family: $p100;
 				font-size: 17px;
 				color:white;
 			}
@@ -97,6 +102,7 @@
 	margin: 10px 0;
 
 	.about_contnet3_L {
+		font-family: $p100;
 		
 		img{
 			width: 100%;
@@ -116,6 +122,7 @@
 	}
 
 	.about_contnet3_title {
+		font-family: $p400;
 		font-size: 24px;
 	}
 
@@ -125,7 +132,7 @@
 }
 
 .video-container {
-	margin: 10vh 0;
+	margin: 5vh 0 10vh 0;
  	position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;

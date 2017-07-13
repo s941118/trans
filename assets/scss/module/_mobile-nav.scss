@@ -15,7 +15,7 @@
 .mobile-nav-btn {
 	pointer-events: visible;
 	position: absolute;
-	z-index: 1;
+	z-index: 10;
 	right: 15px;
 	top: 18px;
 	width: 50px;
@@ -33,13 +33,13 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	background-color: $main;
+	background-color: white;
 	transition: .3s ease;
 }
 
 .mobile-nav-btn:before {
 	transform: translateY(-10px);
-	box-shadow: 0 10px 0 0 $main;
+	box-shadow: 0 10px 0 0 white;
 }
 
 .mobile-nav-btn:after {
@@ -51,7 +51,7 @@
 	&:before {
 		transform-origin: 0 0;
 		transform: translateY(-10px) rotate(45deg);
-		box-shadow: 0 0 0 0 $main;
+		box-shadow: 0 0 0 0 white;
 	}
 	&:after {
 		transform-origin: 0 100%;
