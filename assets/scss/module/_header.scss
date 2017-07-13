@@ -39,6 +39,26 @@ header {
 }
 
 
+#nav {
+	-webkit-overflow-scrolling: touch;
+	font-size: 15px;
+	color: $main;
+	z-index: 1;
+	position: relative;
+	transition: .3s ease;
+	background-color: #000;
+	
+	@media screen and (max-width: 768px) {
+		z-index: 100;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		transform: translateX(100%);
+	}
+}
+
+
 .nav {
 	font-family: $p200;
 	font-size: 14px;
