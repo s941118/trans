@@ -52,11 +52,13 @@ $(window).load(function() {
 		}
 	}).scroll()
 
-
+  
+})
+    
 
 	
 
-})
+
 
 
 
