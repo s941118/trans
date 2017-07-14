@@ -34,8 +34,7 @@ img {
 
 [class*="img-bg-"] {
     background-position: center;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background-repeat: no-repeat; // background-attachment: fixed;
     // @media screen and (max-width: 992px) {
     // 	background-attachment: scroll;		
     // }
@@ -73,33 +72,31 @@ img {
 
 //=========首頁
 .wrap {
-    font-size: 0;
     background-color: #F7F7F7;
     height: 100vh;
 }
 
 .wrap .title {
-	font-weight: bolder;
+    font-weight: bolder;
     font-size: 37px !important;
     line-height: 40px !important;
 }
 
-.title > .title-heading {
-	display: inline;
+.title>.title-heading {
+    display: inline;
 }
 
 .little_title {
-	font-weight: normal;
-	display: inline-block;
+    font-weight: normal;
+    display: inline-block;
     font-size: 15px;
     line-height: 15px;
 }
 
 .pic_TRANS {
-    margin: -550px 0px 0px 50vw;
+    margin: 0;
+    margin-left: 50vw;
     position: relative;
-    width: 35vw;
-    height: auto;
 }
 
 .pic_TRANS div {
