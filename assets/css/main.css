@@ -374,8 +374,8 @@ header {
   -ms-flex-pack: start;
   justify-content: flex-start;
   align-item: right;
-  z-index: 2;
-  position: relative; }
+  z-index: 4;
+  position: absolute; }
   header .logo, header a {
     height: 100%;
     width: auto; }
