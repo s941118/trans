@@ -279,12 +279,12 @@ a {
 
 .register_btn {
   font-size: 14px;
-  background-color: #ffffff;
+  padding: 15px;
+  background-color: white;
   width: 300px;
   border-radius: 30px;
   -webkit-box-shadow: 2px 2px 1px #444444;
   box-shadow: 2px 2px 1px #444444;
-  margin-top: 200px;
   opacity: .5;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
@@ -355,6 +355,21 @@ a {
     -webkit-box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2); }
 
+@media screen and (max-width: 992px) {
+  .register_btn {
+    width: 100%; } }
+
+.section {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+.container-fluid {
+  padding-left: 10%;
+  padding-right: 10%; }
+
 header {
   -webkit-box-shadow: 0 1px 0 0 rgba(189, 192, 209, 0.2);
   box-shadow: 0 1px 0 0 rgba(189, 192, 209, 0.2);
@@ -367,9 +382,10 @@ header {
   -ms-flex-pack: start;
   justify-content: flex-start;
   align-item: right;
-  z-index: 2;
-  position: relative; }
-  header .logo, header a {
+  z-index: 4;
+  position: absolute; }
+  header .logo,
+  header a {
     height: 100%;
     width: auto; }
   header img {
@@ -469,14 +485,14 @@ header {
 
 #register {
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-  background-color: #000000;
+  background-color: black;
   color: white; }
   #register:hover {
-    color: #000000;
+    color: black;
     background-color: white;
-    -webkit-transition: background-color  .5s ease;
-    -o-transition: background-color  .5s ease;
-    transition: background-color  .5s ease; }
+    -webkit-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease; }
 
 #mobile-nav-list.active {
   -webkit-transform: translateX(0);
@@ -1346,24 +1362,6 @@ body.hide {
 img {
   width: 100%; }
 
-#nav {
-  width: 100%;
-  position: relative;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-  background-color: #000; }
-  @media screen and (max-width: 768px) {
-    #nav {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 0;
-      -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      transform: translateX(100%); } }
-
-.container
 [class*="img-bg-"] {
   background-position: center;
   background-repeat: no-repeat; }
@@ -1396,26 +1394,30 @@ img {
   padding: 0 15px; }
 
 .wrap {
-  font-size: 0;
-  position: relative;
   background-color: #F7F7F7;
   height: 100vh; }
 
 .wrap .title {
-  font-size: 37px;
-  line-height: 40px;
-  padding: 10vw; }
+  font-weight: bolder;
+  font-size: 37px !important;
+  line-height: 40px !important; }
 
 .little_title {
+  font-weight: normal;
+  display: inline-block;
   font-size: 15px;
-  line-height: 15px;
-  margin: -35px 0px 0px 150px; }
+  line-height: 15px; }
+
+#pic_TRANS_container {
+  height: 200px; }
 
 .pic_TRANS {
-  margin: -550px 0px 0px 50vw;
-  position: relative;
-  width: 35vw;
-  height: auto; }
+  top: 120px;
+  right: 10%;
+  margin: 0;
+  width: 33vw;
+  height: 33vw;
+  position: absolute; }
 
 .pic_TRANS div {
   position: absolute;
@@ -1473,6 +1475,30 @@ img {
 .pic_TRANS div:nth-child(5) {
   -webkit-animation-delay: 16s;
   animation-delay: 16s; }
+
+#pic_TRANS_small {
+  display: none; }
+
+@media screen and (max-width: 992px) {
+  .wrap {
+    height: auto; }
+  .pic_TRANS {
+    position: static;
+    right: auto;
+    width: auto;
+    height: auto; }
+  .pic_TRANS .index-pic-trans {
+    display: none; }
+  #pic_TRANS_container {
+    height: auto; }
+  #pic_TRANS_small {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+  #pic_TRANS_small td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle; } }
 
 #header {
   width: 100%;
