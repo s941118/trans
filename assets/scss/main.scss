@@ -189,18 +189,13 @@ img {
     }
 
     #pic_TRANS_small td {
-        padding: 5px;
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
     }
 
-    #pic_TRANS_small .square-image-box {
-        position: relative;
+    .register_btn {
         width: 100%;
-    }
-
-    #pic_TRANS_small .square-image-box:before {
-        content: "";
-        display: block;
-        padding-top: 100%;
     }
 }
 
