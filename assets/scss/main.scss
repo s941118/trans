@@ -83,7 +83,7 @@ img {
 	font-size: 20px;
 	position: relative;
 	display: inline-block;
-	z-index: 3;
+	z-index: 0;
 	top: -20px;
 	left: 0;
 	background-color: #000000;
@@ -95,6 +95,7 @@ img {
 .wrapper {
 	max-width: 1010px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 //=========首頁
@@ -243,5 +244,3 @@ img {
 .go-back-btn:hover {
 	opacity: 1;
 }
-
-

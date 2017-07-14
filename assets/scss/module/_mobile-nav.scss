@@ -6,7 +6,7 @@
 	pointer-events: none;
 	top: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 11;
 	@media screen and (max-width: 768px) {
 		display: block;
 	}
@@ -16,8 +16,8 @@
 	pointer-events: visible;
 	position: absolute;
 	z-index: 10;
-	right: 15px;
-	top: 18px;
+	right: 10px;
+	top: 6px;
 	width: 50px;
 	height: 50px;
 }
@@ -33,13 +33,13 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	background-color: white;
+	background-color: black;
 	transition: .3s ease;
 }
 
 .mobile-nav-btn:before {
 	transform: translateY(-10px);
-	box-shadow: 0 10px 0 0 white;
+	box-shadow: 0 10px 0 0 black;
 }
 
 .mobile-nav-btn:after {
@@ -49,11 +49,13 @@
 .mobile-nav-btn.active {
 
 	&:before {
+		background-color: black;
 		transform-origin: 0 0;
 		transform: translateY(-10px) rotate(45deg);
-		box-shadow: 0 0 0 0 white;
+		box-shadow: 0 0 0 0 black;
 	}
 	&:after {
+		background-color: black;
 		transform-origin: 0 100%;
 		transform: translateY(10px) rotate(-45deg);
 	}

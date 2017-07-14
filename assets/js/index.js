@@ -11,10 +11,10 @@ $(window).load(function() {
 	$('#header').load('../../partail/_header.html');
 	$('#footer').load('../../partail/_footer.html');
 
-	/// 漢堡包
-	$('#mobile-nav').click(function() {
+
+	$('#header').on('click', '#mobile-nav', function() {
 		$('.mobile-nav-btn').toggleClass('active');
-		$('#nav').toggleClass('active');
+		$('#mobile-nav-list').toggleClass('active');
 	})
 
 
