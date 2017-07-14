@@ -8,13 +8,13 @@ $(window).load(function() {
 
 	/// 載入 partial 們
 	// $('#nav').load('../../partail/_nav.html');
-	$('#header').load('../../partail/_header.html');
-	$('#footer').load('../../partail/_footer.html');
+	$('#header').load('../partail/_header.html');
+	$('#footer').load('../partail/_footer.html');
 
-	/// 漢堡包
-	$('#mobile-nav').click(function() {
+
+	$('#header').on('click', '#mobile-nav', function() {
 		$('.mobile-nav-btn').toggleClass('active');
-		$('#nav').toggleClass('active');
+		$('#mobile-nav-list').toggleClass('active');
 	})
 
 
@@ -52,11 +52,29 @@ $(window).load(function() {
 		}
 	}).scroll()
 
-
+	//議程的tab
+	$('.tabgroup > div').hide();
+	$('.tabgroup > div:first-of-type').show();
+	$('.tabs a').click(function(e){
+	  e.preventDefault();
+	    var $this = $(this),
+	        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+	        others = $this.closest('li').siblings().children('a'),
+	        target = $this.attr('href');
+	    others.removeClass('active');
+	    $this.addClass('active');
+	    $(tabgroup).children('div').hide();
+	    $(target).show();
+  
+})
+    
+  
+})
+    
 
 	
 
-})
+
 
 
 
