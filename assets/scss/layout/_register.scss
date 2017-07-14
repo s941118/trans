@@ -1,10 +1,11 @@
 
 
 .top {
-	margin: 112px 10vw 100px 10vw;
+	margin: 10% 9vw 100px 10%;
 	width: 100%;	
 
 	.top_title {
+		font-family: $p200;
 		margin-bottom: 91px;
 		font-size: 40px;
 		color: black;
@@ -14,6 +15,7 @@
 		line-height: 30px;
 
 		.top_content_text {
+			font-family: $p200;
 			display: inline-block;
 			color: black;
 			font-size: 16px;
@@ -22,21 +24,23 @@
 
 		img {
 			display: inline-block;
-			width: 1.2%;
+			width:1.5%;
 			
 		}
 	}
 }
 
 .register_title {
-	margin:72px 0 20px 112px;
+
+	margin:72px 10% 20px 6%;
 	font-size: 28px;
 	color: black;
 }
 
 .register-table {
-	margin-left: 72px;
+	margin-left: 6%;
 	margin-bottom: 100px;
+	width: 92%;
 
 	.tr {
 		display: flex;
