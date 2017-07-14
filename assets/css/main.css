@@ -485,13 +485,13 @@ header {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .navbar-toggle {
     display: none; }
   .nav > .nav-mask, .nav.toggled > .nav-mask {
     opacity: 0; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   .navbar-toggle * {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;

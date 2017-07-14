@@ -151,7 +151,7 @@ img {
     animation-delay: 16s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint-small) {
     .pic_TRANS {
         margin: auto;
     }
@@ -182,7 +182,7 @@ img {
     position: relative;
     background-color: #ffffff;
     height: 62px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $breakpoint-small) {
         position: absolute;
         width: 100%;
         left: 0;
@@ -193,7 +193,7 @@ img {
 
 .container {
     width: calc( 100% - #{$nav-width});
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $breakpoint-small) {
         width: 100%;
     }
 }
