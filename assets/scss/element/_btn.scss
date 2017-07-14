@@ -1,93 +1,95 @@
 [class*='btn'] {
-	cursor: pointer;
-	user-select: none;
-  text-align: center;  
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
 }
 
 .link-btn {
-	color: rgba(256,256,256,.8);
-//	border-radius: 30px;
-	line-height: 25px;
-	font-size: 13px;
-	width: 100px;
-	opacity: .85;
-	transition: .3s ease;
+    color: rgba(256, 256, 256, .8); //  border-radius: 30px;
+    line-height: 25px;
+    font-size: 13px;
+    width: 100px;
+    opacity: .85;
+    transition: .3s ease;
 
-	&:hover {
-		color:#ffffff;
-	}
+    &:hover {
+        color: #ffffff;
+    }
 }
 
-.register_btn{
+.register_btn {
+    font-size: 14px;
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 1px #444444;
+    opacity: .5;
+    transition: .3s ease;
 
-	font-size: 14px;
-	background-color: #ffffff;
-	width: 300px;
-	border-radius: 30px;
-	box-shadow: 2px 2px 1px #444444;
-	margin-top: 200px;
-	opacity: .5;
-	transition: .3s ease;
-
-	&:hover {
-		opacity: 1;
-		box-shadow: 2px 2px 1px #000000;
-
-	}	
+    &:hover {
+        opacity: 1;
+        box-shadow: 2px 2px 1px #000000;
+    }
 }
 
 .partner_btn_content {
-	font-size: 15px;
-	width: 177px;
-	line-height: 43px;
-	height: 43px;
-	background-color: #ffffff;
-	border-radius: 30px;
-	box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, .15);
-	margin: 11px 0 0 0;
+    font-size: 15px;
+    width: 177px;
+    line-height: 43px;
+    height: 43px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, .15);
+    margin: 11px 0 0 0;
 
-	&:hover {
-		opacity: 1;
-		transform: translateY(-3px);
-		box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, .05);
-
-	}		 
+    &:hover {
+        opacity: 1;
+        transform: translateY(-3px);
+        box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, .05);
+    }
 }
 
-.register2_btn{
-	font-family: $p500;
-	font-size: 15px;
-	background-color: #ffffff;
-	width: 457px;
-	height: 42px;
-	line-height:42px;//垂直至中
-	box-shadow: 0px 0px 2px 0px #444444;
-	margin:100px auto;
-	opacity: .5;
-	transition: .3s ease;
+.register2_btn {
+    font-family: $p500;
+    font-size: 15px;
+    background-color: #ffffff;
+    width: 457px;
+    height: 42px;
+    line-height: 42px; //垂直至中
+    box-shadow: 0px 0px 2px 0px #444444;
+    margin: 100px auto;
+    opacity: .5;
+    transition: .3s ease;
 
-	&:hover {
-		opacity: 1;
-		box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, .15);
-	}	
+    &:hover {
+        opacity: 1;
+        box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, .15);
+    }
 }
 
-.register_float_btn{
-	font-family: $p600;
-	font-size: 19px;
-	position: fixed;
-	height: 118px;
-	width: 118px;
-	background-color: black;
-	color:white;
-	border-radius:99em;
-	margin: 30vh 100px 0 72vw;
-	text-align: center;
-	padding-top:40px;
-	transition: .3s ease;
-	box-shadow: 1px 1px -1px 1px rgba(0, 0, 0, .5);
-	&:hover {
-		transform: translateY(-2px);
-		box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .2);
-	}	
+.register_float_btn {
+    font-family: $p600;
+    font-size: 19px;
+    position: fixed;
+    height: 118px;
+    width: 118px;
+    background-color: black;
+    color: white;
+    border-radius: 99em;
+    margin: 30vh 100px 0 72vw;
+    text-align: center;
+    padding-top: 40px;
+    transition: .3s ease;
+    box-shadow: 1px 1px -1px 1px rgba(0, 0, 0, .5);
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .2);
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .register_btn {
+        width: 100%;
+    }
 }
