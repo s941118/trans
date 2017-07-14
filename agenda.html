@@ -27,18 +27,16 @@
     <div class="main_title"><b>Agenda</b></div>
 		
 		<div class="agenda-link">
-			<a href="#mainStageAgenda">
-				<div class="box">
-					<div class="left">
-						Main Stage<br>
-						Agenda >>
-					</div>
-					<div class="right">
-						<img src="assets/img/agenda/map1.svg" alt="">
-					</div>
+			<a class="box" href="#mainStageAgenda">
+				<div class="left">
+					Main Stage<br>
+					Agenda >>
+				</div>
+				<div class="right">
+					<img src="assets/img/agenda/map1.svg" alt="">
 				</div>
 			</a>
-			<div class="box">
+			<a  class="box" href="#sideStageAgenda">
 				<div class="left">
 					Side Stage<br>
 					Agenda >>
@@ -46,23 +44,23 @@
 				<div class="right">
 					<img src="assets/img/agenda/map2.svg" alt="">
 				</div>
-			</div>
+			</a>
 		</div>
-		<a name="#mainStageAgenda"></a>
-		<div class="agenda-wrap">
+		<div id="mainStageAgenda" class="agenda-wrap">
 			<div class="title">
 				<h2>Main Stage Agenda</h2>
 				<img src="assets/img/agenda/map1.svg" alt="">
 			</div>
 			<div class="agenda-tab">
-				<div class="tab-btn active">Day 1</div>
-				<div class="tab-btn">Day 2</div>
+				<div @click="changeDay('mainStageDay', 1)" class="tab-btn" :class="{ active: mainStageDay === 1 }">Day 1</div>
+				<div @click="changeDay('mainStageDay', 2)" class="tab-btn" :class="{ active: mainStageDay === 2 }">Day 2</div>
 				<div class="time">
-					<div class="daytitle">Day 1</div>
+					<div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
+					<div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
 					<b>27 TH August</b>
 				</div>
 			</div>
-			<div class="agenda-table">
+			<div v-if="mainStageDay === 1" class="agenda-table">
 				<div class="tr th">
 					<div class="tr-time">TIME</div>
 					<div class="tr-title">TITLE</div>
@@ -181,22 +179,137 @@
 					</div>
 				</div>
 			</div>
+			<div v-if="mainStageDay === 2" class="agenda-table">
+				<div class="tr th">
+					<div class="tr-time">TIME</div>
+					<div class="tr-title">TITLE</div>
+					<div class="tr-content">CONTENT</div>
+					<div class="tr-speaker">SPEAKER</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">09:30-10:00</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						
+					</div>
+					<div class="tr-speaker">
+	
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">10:00-11:00</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						1. The Experience of a Top Tier Healthcare Venture: How GE Ventures Boosts the Global Healthcare Startup Ecosystem <br><br>
+						2. Navigating the Course of Healthcare: Investment Strategy of KPCB China
+					</div>
+					<div class="tr-speaker">
+						Ylex de Winter<br><br>
+						James Huang
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">11:10-12:00</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						1. Precision Medicine: The Emerging Business of Genetic Screening<br><br>
+						2. Match Making: A Whole New Model of Accelerating Healthcare Startups
+					</div>
+					<div class="tr-speaker">
+						YDanny Yeung<br><br>
+						Sidney Yee
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">12:00-12:20</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						1. The Challenges and Opportunities of the Aging Industry
+					</div>
+					<div class="tr-speaker">
+						Liang-Kung Chen
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">12:20-14:00</div>
+					<div class="tr-title">
+						KRest Time 
+					</div>
+					<div class="tr-content">
+						
+					</div>
+					<div class="tr-speaker">
+						
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">14:00-15:10</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						1. Deepika Bodapati: Founder of Athelas/Blogger/Researcher<br><br>
+						2. Katherine Jin vs. Ebola Virus <br><br>
+						3. Daniel Penn: Quality PRD Platform Builder
+					</div>
+					<div class="tr-speaker">
+						Deepika Bodapati<br><br>
+						Katherine Jin<br><br>
+						Daniel Penn
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">15:50-17:50	</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+					
+					</div>
+					<div class="tr-speaker">
+						
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">18:00-18:40</div>
+					<div class="tr-title">
+						Keynote <br>
+						A New Course in Healthcare
+					</div>
+					<div class="tr-content">
+						1.The Future Trend in Healthcare: A Comprehensive Study of the Japanese Healthcare Industry 
+					</div>
+					<div class="tr-speaker">
+						Keiichi Ohwari<br>
+						Yutaka Kitahara<br>
+						Taiki Ishikura
+					</div>
+				</div>
+			</div>
 		</div>
-		<a name="#sideStageAgenda"></a>
-		<div class="agenda-wrap">
+		<div id="sideStageAgenda" class="agenda-wrap">
 			<div class="title">
 				<h2>Side Stage Agenda</h2>
 				<img src="assets/img/agenda/map2.svg" alt="">
 			</div>
 			<div class="agenda-tab">
-				<div class="tab-btn active">Day 1</div>
-				<div class="tab-btn">Day 2</div>
+				<div @click="changeDay('sideStageDay', 1)" class="tab-btn" :class="{ active: sideStageDay === 1 }">Day 1</div>
+				<div @click="changeDay('sideStageDay', 2)" class="tab-btn" :class="{ active: sideStageDay === 2 }">Day 2</div>
 				<div class="time">
-					<div class="daytitle">Day 1</div>
+					<div v-if="sideStageDay === 1" class="daytitle">Day 1</div>
+					<div v-if="sideStageDay === 2" class="daytitle">Day 2</div>
 					<b>26 TH August</b>
 				</div>
 			</div>
-			<div class="agenda-table">
+			<div v-if="sideStageDay === 1" class="agenda-table">
 				<div class="tr th">
 					<div class="tr-time">TIME</div>
 					<div class="tr-title">TITLE</div>
@@ -281,6 +394,89 @@
 					</div>
 				</div>
 			</div>
+			<div v-if="sideStageDay === 2" class="agenda-table">
+				<div class="tr th">
+					<div class="tr-time">TIME</div>
+					<div class="tr-title">TITLE</div>
+					<div class="tr-content">CONTENT</div>
+					<div class="tr-speaker">SPEAKER</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">10:15-10:30</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+					
+					</div>
+					<div class="tr-speaker">
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">10:30-12:30</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+		
+					</div>
+					<div class="tr-speaker">
+						Pitch Arena
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">12:30-14:00</div>
+					<div class="tr-title">
+						--
+						
+					</div>
+					<div class="tr-content">
+					
+					</div>
+					<div class="tr-speaker">
+						
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">14:00-15:00</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						
+					</div>
+					<div class="tr-speaker">
+						創業團隊1<br>
+						創業團隊2<br>
+						創業團隊3<br>
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">15:10-15:40</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+						
+					</div>
+					<div class="tr-speaker">
+						Yang yang<br>
+						Sidney Yee
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">16:00 - 17:00</div>
+					<div class="tr-title">
+						--
+					</div>
+					<div class="tr-content">
+			
+					</div>
+					<div class="tr-speaker">
+						Reply from Main Stage Speakers
+					</div>
+				</div>
+			</div>
 		</div>
   </div>
   <footer id="footer"></footer>
@@ -288,4 +484,21 @@
 <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
 <script src="assets/js/vendor/vue.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script>
+	agendaVue = new Vue({
+		el: '#trans',
+		
+		data: {
+			mainStageDay: 1,
+			sideStageDay: 1,
+		},
+
+		methods: {
+			changeDay: function(stage, day) {
+				this[stage] = day
+			}
+		}
+
+	})
+</script>
 </html>
