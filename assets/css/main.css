@@ -280,20 +280,12 @@ a {
 .register_btn {
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 17px;
-<<<<<<< HEAD
   padding: 15px;
   background-color: white;
-=======
-  background-color: #ffffff;
->>>>>>> 303ea3b89a5305ed3e783e56e2dd5c672ffa1de2
   width: 350px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
-<<<<<<< HEAD
-=======
-  margin-top: 200px;
->>>>>>> 303ea3b89a5305ed3e783e56e2dd5c672ffa1de2
   opacity: .8;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
@@ -507,15 +499,9 @@ header {
   background-color: #000000;
   color: white;
   margin-left: 10px;
-<<<<<<< HEAD
   -webkit-transition: background-color .9s ease;
   -o-transition: background-color .9s ease;
   transition: background-color .9s ease; }
-=======
-  -webkit-transition: background-color  .9s ease;
-  -o-transition: background-color  .9s ease;
-  transition: background-color  .9s ease; }
->>>>>>> 303ea3b89a5305ed3e783e56e2dd5c672ffa1de2
   #register:hover {
     color: #000000;
     background-color: white;
@@ -924,7 +910,6 @@ footer > .mobile-only > .links {
 .info-mobile > table > tbody > tr:nth-child(even) td {
   vertical-align: middle; }
 
-<<<<<<< HEAD
 .info-mobile > table > tbody > tr > td {
   padding: 20px;
   padding-top: 10px;
@@ -948,8 +933,6 @@ footer > .mobile-only > .links {
   footer > .mobile-only {
     display: block; } }
 
-=======
->>>>>>> 303ea3b89a5305ed3e783e56e2dd5c672ffa1de2
 .about_content {
   background-color: rgba(255, 255, 255, 0.2);
   font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
@@ -1521,7 +1504,6 @@ img {
   font-weight: bolder;
   font-size: 37px;
   line-height: 48.72px;
-<<<<<<< HEAD
   padding-top: 10vw;
   padding-bottom: 10vw;
   font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
@@ -1533,16 +1515,6 @@ img {
   font-size: 15px;
   line-height: 16.41px;
   margin-left: 5%; }
-=======
-  padding: 10vw;
-  font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
-
-.little_title {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-  font-size: 15px;
-  line-height: 16.41px;
-  margin: -3.5% 0px 0px 14%; }
->>>>>>> 303ea3b89a5305ed3e783e56e2dd5c672ffa1de2
 
 .pic_TRANS {
   top: 120px;
