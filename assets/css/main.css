@@ -1030,6 +1030,7 @@ footer > .mobile-only > .links {
   width: 100%;
   margin: 13px 0; }
   .about_content_3 .card-text {
+    background-color: rgba(255, 255, 255, 0.6);
     -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
     box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05); }
   .about_content_3 .about_contnet3_L img {
