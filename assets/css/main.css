@@ -801,14 +801,24 @@ footer > .mobile-only {
   padding-top: 20px;
   padding-bottom: 30px; }
 
-footer > .mobile-only > .links > table {
-  table-layout: fixed;
-  margin-left: -10px;
-  margin-right: -10px; }
-  footer > .mobile-only > .links > table td {
-    padding: 10px; }
-    footer > .mobile-only > .links > table td img {
-      fill: black; }
+footer > .mobile-only > .links {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+  text-justify: distribute-all-lines; }
+  footer > .mobile-only > .links a {
+    width: calc(20% - 10px);
+    max-width: 70px;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1; }
+    footer > .mobile-only > .links a img {
+      display: inline; }
+  footer > .mobile-only > .links .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0; }
 
 .info {
   text-align: right;
