@@ -841,6 +841,53 @@ footer {
 
 .copyright {
   font-size: 12px; }
+  .copyright .mobile-only {
+    display: none; }
+
+.info-mobile {
+  text-align: right; }
+
+.info-mobile > table {
+  display: none; }
+  .info-mobile > table .inner tr:nth-child(1) > td {
+    padding-bottom: 10px; }
+  .info-mobile > table .inner td:nth-child(odd) {
+    padding-right: 10px; }
+  .info-mobile > table .inner .contactMail,
+  .info-mobile > table .inner .contactPhone {
+    text-align: center;
+    padding-right: 0; }
+  .info-mobile > table .inner .contactMail img,
+  .info-mobile > table .inner .contactPhone img {
+    display: inline;
+    width: auto;
+    height: 10px; }
+  .info-mobile > table .inner .contactPhone img {
+    height: 16px; }
+
+.info-mobile > table > tbody > tr:nth-child(even) td {
+  vertical-align: middle; }
+
+.info-mobile > table > tbody > tr > td {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  vertical-align: top; }
+
+.info-mobile > table > tbody > tr > td:nth-child(1) {
+  padding-left: 0; }
+
+.info-mobile > table > tbody > tr > td:nth-child(2) {
+  padding-right: 0; }
+
+@media screen and (max-width: 992px) {
+  .info {
+    display: none; }
+  .info-mobile > table {
+    display: inline-table; }
+  .copyright > .mobile-only {
+    display: inline; } }
 
 .about {
   font-size: 30px;

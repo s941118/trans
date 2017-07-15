@@ -68,7 +68,7 @@ footer {
             }
         }
 
-        .contactUs {        
+        .contactUs {
             .contactMail,
             .contactPhone {
                 text-align: right;
@@ -91,4 +91,78 @@ footer {
 
 .copyright {
     font-size: 12px;
+
+    .mobile-only {
+        display: none;
+    }
+}
+
+.info-mobile {
+    text-align: right;
+}
+
+.info-mobile>table {
+    display: none;
+
+    .inner {
+        tr:nth-child(1)>td {
+            padding-bottom: 10px;
+        }
+        td:nth-child(odd) {
+            padding-right: 10px;
+        }
+
+        .contactMail,
+        .contactPhone {
+            text-align: center;
+            padding-right: 0;
+        }
+
+        .contactMail img,
+        .contactPhone img {
+            display: inline;
+            width: auto;
+            height: 10px;
+        }
+
+        .contactPhone img {
+            height: 16px;
+        }
+    }
+}
+
+.info-mobile>table>tbody>tr:nth-child(even) {
+    td {
+        vertical-align: middle;
+    }
+}
+
+.info-mobile>table>tbody>tr>td {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.info-mobile>table>tbody>tr>td:nth-child(1) {
+    padding-left: 0;
+}
+
+.info-mobile>table>tbody>tr>td:nth-child(2) {
+    padding-right: 0;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .info {
+        display: none;
+    }
+
+    .info-mobile>table {
+        display: inline-table;
+    }
+
+    .copyright > .mobile-only {
+        display: inline;
+    }
 }
