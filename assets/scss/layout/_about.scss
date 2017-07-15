@@ -74,7 +74,7 @@
         width: 100%;
         vertical-align: bottom;
 
-        b {
+        b.pull-right {
             float: right;
         }
     }
@@ -114,6 +114,9 @@
     width: 100%;
     margin: 13px 0;
 
+    .card-text {
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    }
 
     .about_contnet3_L {
 
@@ -129,6 +132,16 @@
             width: 100%;
             margin: 0 0 -4px 0;
         }
+    }
+
+    .about_contnet3_L.card-text {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .about_contnet3_R.card-text {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .about_contnet3_text {
@@ -164,7 +177,7 @@
 }
 
 .video-container {
-    margin: 5vh 0 10vh 0;
+    margin-bottom: 10vh;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
@@ -183,36 +196,38 @@
 }
 
 @media screen and (max-width: $breakpoint-medium) {
-    .about_content_3 {
-        .about_contnet3_L,
-        .about_contnet3_R {
-            display: inline-block;
-            float: right !important;
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .card-image {
+            order: 1;
         }
 
-        .image-panel {
-            float: left !important;
+        .card-text {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            order: 2;
         }
     }
 }
 
 @media screen and (max-width: $breakpoint-small) {
     .about_subtitle {
-        font-size: 6vw;
+        font-size: 7vw;
+        font-weight: bolder;
         padding-right: 0;
+        padding-top: 0;
         padding-bottom: 20px;
+        height: 30vw;
+        padding-bottom: 0;
 
         .about_subtitle_wrapper {
             b {
-                float: left;
+                float: left !important;
             }
-        }
-    }
-
-    .about_contnet3_text {
-        .about_contnet3_text_wrapper {
-            padding-top: 80px;
-            padding-bottom: 80px;
         }
     }
 }
