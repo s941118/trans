@@ -21,6 +21,8 @@
 @import 'layout/partner';
 @import 'layout/faq';
 @import 'layout/review';
+//====字體
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body {
     background-color: #fff;
@@ -76,6 +78,11 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+.wrapper_big {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 //=========首頁
 .wrap {
@@ -98,7 +105,7 @@ img {
     font-family: $p200;
     font-size: 15px;
     line-height: 16.41px;
-    margin-left: 5%;
+    margin-left: 1%;
 }
 
 .pic_TRANS {

@@ -1,19 +1,27 @@
+
+
 .speakers-container {
 	margin: 60px auto 100px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	font-family: $p200;
 
 	.box {
 		flex: 0 0 calc( 100% / 4 - 20px );
 		margin: 10px;
+
 
 		@media screen and (max-width: 992px) {
 			flex: 0 0 calc( 100% / 2 - 20px );
 		}
 		@media screen and (max-width: 768px) {
 			flex: 0 0 calc( 100% - 20px );
+		}
+
+		img{
+			width: 270px;
 		}
 
 		.text {
@@ -28,9 +36,10 @@
 			}
 
 			p {
-				font-size: 14px;
+				font-size: 12px;
 				opacity: .65;
 			}
 		}
 	}
 }
+

@@ -6,31 +6,40 @@
 	font-family: $p500;
 	color:#000000;
 	font-size: 44px;
+	margin-top: 5%;
 	margin-bottom: 26px;
+	margin-left: 3%;
 	text-align: left;
-	
 }
 
 .partner_line {
-	
-}
+	width: 100%;
+	margin-left: 3%;
 
-.partner_name {
-	color:#CACACA;
-	background-color: #ffffff;
-	border-radius: 20px;
-	opacity: .7;
-	transition: .3s ease;
-	padding: 20px;
-	box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, .15);
-	font-family: $p200;
+	.partner_name {
+		display: inline-block;
+		
+		font-family: $p100;
+		margin:5px;
+		background-color: #ffffff;
+		border-radius: 20px;
+		opacity: .7;
+		transition: .3s ease;
+		padding: 20px;
+		box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, .15);
+		font-size: 16px;
+		color: #CACACA;
 
-	&:hover {
-		opacity: 1;
-		transform: translateY(-3px);
-		box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, .05);
+		img{
+		}
 
-	}	
+		&:hover {
+			opacity: 1;
+			transform: translateY(-3px);
+			box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, .05);
+
+		}	
+	}
 }
 
 .partner_wrap {
@@ -40,7 +49,7 @@
 .partner_btn {
 	position: absolute;
 	top: 0;
-	right: 15px;
+	right: 30px;
 	padding: 20px;
 	z-index: 0;
 	transform: translate3d(0, 0, 0);

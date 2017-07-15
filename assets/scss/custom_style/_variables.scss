@@ -16,10 +16,12 @@ $breakpoint-nav-transform: $breakpoint-small;
 
 
 /// font-family
-$p100: BasicSansAlt-ExtraLight,PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
-$p200: BasicSansAlt-Light,PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p300: BasicSansAlt-Regular,PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p400: BasicSansAlt-SemiBold,PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p500: BasicSansAlt-Bold,PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
-$p600: BasicSansAlt-Black,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p100: BasicSansAlt-ExtraLight,Noto Sans TC,PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+$p200: BasicSansAlt-Light,Noto Sans TC,PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p300: BasicSansAlt-Regular,Noto Sans TC,PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p400: BasicSansAlt-SemiBold,Noto Sans TC,PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p500: BasicSansAlt-Bold,Noto Sans TC,PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+$p600: BasicSansAlt-Black,Noto Sans TC,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+
+$c100:cwTeXYen,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
 

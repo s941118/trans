@@ -77,6 +77,11 @@ footer>.mobile-only>.links {
 
         .powered-by {
             //border-right: 0.75px solid white;
+            img {
+                width: auto;
+                height: 30px;
+                vertical-align: text-top;
+            }
         }
 
         .followUs {

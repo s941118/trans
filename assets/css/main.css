@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 html, body {
   font-size: 15px;
   width: 100%;
@@ -278,7 +279,7 @@ a {
     color: #ffffff; }
 
 .register_btn {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 17px;
   padding: 15px;
   background-color: white;
@@ -314,7 +315,7 @@ a {
     box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, 0.05); }
 
 .register2_btn {
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 15px;
   background-color: #ffffff;
   width: 457px;
@@ -329,11 +330,11 @@ a {
   transition: .3s ease; }
   .register2_btn:hover {
     opacity: 1;
-    -webkit-box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.15);
-    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.15); }
+    background-color: #000000;
+    color: #ffffff; }
 
 .register_float_btn {
-  font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 19px;
   position: fixed;
   height: 118px;
@@ -341,20 +342,18 @@ a {
   background-color: black;
   color: white;
   border-radius: 99em;
-  margin: 30vh 100px 0 72vw;
+  margin: 30vh 200px 0 69%;
   text-align: center;
   padding-top: 40px;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
-  transition: .3s ease;
-  -webkit-box-shadow: 1px 1px -1px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 1px -1px 1px rgba(0, 0, 0, 0.5); }
+  transition: .3s ease; }
   .register_float_btn:hover {
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
-    -webkit-box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.1); }
 
 @media screen and (max-width: 992px) {
   .register_btn {
@@ -432,7 +431,7 @@ header {
       transform: translateX(100%); } }
 
 .nav {
-  font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 14px;
   margin: 0 0 0 auto; }
   @media screen and (max-width: 768px) {
@@ -495,7 +494,7 @@ header {
   margin-left: -10px; }
 
 #register {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   background-color: #000000;
   color: white;
   margin-left: 10px;
@@ -634,7 +633,7 @@ section h2 {
   margin-bottom: 8px;
   padding-left: 10px;
   font-size: 17px;
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-weight: 500;
   letter-spacing: .5px; }
 
@@ -658,7 +657,7 @@ section h2 {
     margin-top: 4px;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.3);
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-weight: 200; }
   .video-box .date {
     font-size: 12px;
@@ -769,7 +768,7 @@ section h2 {
   margin-bottom: 8px;
   padding-left: 10px;
   font-size: 17px;
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-weight: 500;
   letter-spacing: .5px; }
 
@@ -854,6 +853,10 @@ footer > .mobile-only > .links {
       width: auto;
       height: 30px;
       vertical-align: text-top; }
+    .info table .powered-by img {
+      width: auto;
+      height: 30px;
+      vertical-align: text-top; }
     .info table .followUs img {
       vertical-align: text-top;
       width: auto;
@@ -935,7 +938,7 @@ footer > .mobile-only > .links {
 
 .about_content {
   background-color: rgba(255, 255, 255, 0.2);
-  font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+  font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
   position: relative;
   font-size: 14px;
   color: #666666;
@@ -949,14 +952,14 @@ footer > .mobile-only > .links {
   text-align: justify; }
 
 .content_title {
-  font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+  font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
   font-size: 14px;
   color: #26CAD3;
   padding: 9% 0 4% 0; }
 
 .about_content_2 {
   background-color: rgba(255, 255, 255, 0.6);
-  font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+  font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
   font-size: 14px;
   margin: 10% 0 5% 0;
   color: #000000;
@@ -985,7 +988,7 @@ footer > .mobile-only > .links {
   padding: 5% 10% 3% 10%; }
 
 .about_subtitle {
-  font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
   width: 40%;
   font-size: 45px; }
 
@@ -1002,11 +1005,11 @@ footer > .mobile-only > .links {
       .about_data .about_data_info .about_data_content img {
         width: 25%; }
       .about_data .about_data_info .about_data_content .about_data_number {
-        font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+        font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
         font-size: 36px;
         color: white; }
       .about_data .about_data_info .about_data_content .about_data_text {
-        font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+        font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
         font-size: 17px;
         color: white; }
 
@@ -1023,10 +1026,10 @@ footer > .mobile-only > .links {
     padding: 12% 0 0 3%;
     text-align: center; }
   .about_content_3 .about_contnet3_title {
-    font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-size: 24px; }
   .about_content_3 .about_contnet3_content {
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-size: 14px; }
 
 .video-container {
@@ -1062,7 +1065,8 @@ footer > .mobile-only > .links {
   align-items: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
   .speakers-container .box {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 calc( 100% / 4 - 20px);
@@ -1081,6 +1085,8 @@ footer > .mobile-only > .links {
         -webkit-flex: 0 0 calc( 100% - 20px);
         -ms-flex: 0 0 calc( 100% - 20px);
         flex: 0 0 calc( 100% - 20px); } }
+    .speakers-container .box img {
+      width: 270px; }
     .speakers-container .box .text {
       padding: 25px 10px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -1088,10 +1094,10 @@ footer > .mobile-only > .links {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
       border-radius: 6px; }
       .speakers-container .box .text h3 {
-        font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+        font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
         font-size: 16px; }
       .speakers-container .box .text p {
-        font-size: 14px;
+        font-size: 12px;
         opacity: .65; }
 
 .agenda-link .box {
@@ -1115,7 +1121,7 @@ footer > .mobile-only > .links {
   width: 100%;
   max-width: 800px;
   padding: 10px 30px;
-  font-family: BasicSansAlt-Regular, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 21px; }
   .agenda-link .box > * {
     -webkit-box-flex: 0;
@@ -1140,7 +1146,7 @@ footer > .mobile-only > .links {
     justify-content: space-between;
     background-color: #fff;
     margin-bottom: 50px;
-    font-family: BasicSansAlt-Regular, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-size: 28px; }
     .agenda-wrap .title h2 {
       font-size: 28px; }
@@ -1153,7 +1159,7 @@ footer > .mobile-only > .links {
   .agenda-tab .tab-btn {
     display: inline-block;
     font-size: 15px;
-    font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
     padding: 7px 15px;
     -webkit-box-shadow: 0 0 0 1px #000;
     box-shadow: 0 0 0 1px #000; }
@@ -1162,16 +1168,16 @@ footer > .mobile-only > .links {
     color: #FFF; }
   .agenda-tab .time {
     float: right;
-    font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+    font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
     .agenda-tab .time .daytitle {
       font-size: 32px;
       display: inline-block;
-      font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+      font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
     .agenda-tab .time .date {
       display: inline-block;
       font-size: 16px;
       margin-left: 15px;
-      font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+      font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
       .agenda-tab .time .date p {
         vertical-align: super;
         font-size: 9px; }
@@ -1194,7 +1200,7 @@ footer > .mobile-only > .links {
     padding: 17px 0;
     -webkit-box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     color: #4d4d4d; }
     .agenda-table .tr > * {
       padding: 0 15px; }
@@ -1206,7 +1212,7 @@ footer > .mobile-only > .links {
     -ms-flex: 0 0 140px;
     flex: 0 0 140px;
     font-size: 14px;
-    font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
     text-align: center; }
   .agenda-table .tr-title {
     -webkit-box-flex: 0;
@@ -1214,7 +1220,7 @@ footer > .mobile-only > .links {
     -ms-flex: 0 0 320px;
     flex: 0 0 320px;
     font-size: 16px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     line-height: 19.12px; }
   .agenda-table .tr-content {
     -webkit-box-flex: 1;
@@ -1222,7 +1228,7 @@ footer > .mobile-only > .links {
     -ms-flex: 1 0 300px;
     flex: 1 0 300px;
     font-size: 12px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     padding-right: 20px;
     line-height: 15.12px; }
   .agenda-table .tr-speaker {
@@ -1231,21 +1237,30 @@ footer > .mobile-only > .links {
     -ms-flex: 0 0 150px;
     flex: 0 0 150px;
     font-size: 12px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     text-align: right; }
+
+.register_bg {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  margin: -2% 10vw 20vh 0%;
+  padding: 5% 0 0 0;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05); }
 
 .top {
   margin: 10% 9vw 100px 10%;
+  padding-bottom: 10%;
   width: 100%; }
   .top .top_title {
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     margin-bottom: 91px;
     font-size: 40px;
     color: black; }
   .top .top_content {
     line-height: 30px; }
     .top .top_content .top_content_text {
-      font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+      font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
       display: inline-block;
       color: black;
       font-size: 16px;
@@ -1262,7 +1277,8 @@ footer > .mobile-only > .links {
 .register-table {
   margin-left: 6%;
   margin-bottom: 100px;
-  width: 92%; }
+  width: 90%;
+  font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei; }
   .register-table .tr {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1277,31 +1293,32 @@ footer > .mobile-only > .links {
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding: 17px 0;
-    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
     font-size: 14px; }
   .register-table .th {
-    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.6);
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.6); }
+    -webkit-box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.6); }
   .register-table .tr-sale {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70px;
-    -ms-flex: 0 0 70px;
-    flex: 0 0 70px; }
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+    text-align: center; }
     .register-table .tr-sale img {
       width: 50px; }
   .register-table .tr-name {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 600px;
-    -ms-flex: 0 0 600px;
-    flex: 0 0 600px;
+    -webkit-flex: 0 0 60%;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
     font-size: 14px;
     text-align: left; }
   .register-table .tr-origin {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 150px;
-    -ms-flex: 0 0 150px;
-    flex: 0 0 150px;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
     font-size: 14px; }
     .register-table .tr-origin .currency {
       display: -webkit-inline-box;
@@ -1311,10 +1328,11 @@ footer > .mobile-only > .links {
       font-size: 12px; }
   .register-table .tr-pirce {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 200px;
-    -ms-flex: 0 0 200px;
-    flex: 0 0 200px;
-    font-size: 14px; }
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+    font-size: 14px;
+    text-align: right; }
     .register-table .tr-pirce .currency {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -1326,31 +1344,39 @@ footer > .mobile-only > .links {
   margin: 110px 10vw 10vh 10vw; }
 
 .partner_title {
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
   color: #000000;
   font-size: 44px;
+  margin-top: 5%;
   margin-bottom: 26px;
+  margin-left: 3%;
   text-align: left; }
 
-.partner_name {
-  color: #CACACA;
-  background-color: #ffffff;
-  border-radius: 20px;
-  opacity: .7;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-  padding: 20px;
-  -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, 0.15);
-  box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, 0.15);
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
-  .partner_name:hover {
-    opacity: 1;
-    -webkit-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    transform: translateY(-3px);
-    -webkit-box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, 0.05);
-    box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, 0.05); }
+.partner_line {
+  width: 100%;
+  margin-left: 3%; }
+  .partner_line .partner_name {
+    display: inline-block;
+    font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    opacity: .7;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    padding: 20px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, 0.15);
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 70, 0.15);
+    font-size: 16px;
+    color: #CACACA; }
+    .partner_line .partner_name:hover {
+      opacity: 1;
+      -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
+      -webkit-box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, 0.05);
+      box-shadow: 0px 15px 30px -5px rgba(0, 0, 70, 0.05); }
 
 .partner_wrap {
   position: relative; }
@@ -1358,7 +1384,7 @@ footer > .mobile-only > .links {
 .partner_btn {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 30px;
   padding: 20px;
   z-index: 0;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1369,21 +1395,26 @@ footer > .mobile-only > .links {
 
 #FAQ {
   margin: 10vh 10vw;
-  font-family: BasicSansAlt-Regular, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei; }
+  font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
 .FAQTitle {
   font-size: 28px;
   margin: 82px 0 40px 20px;
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei; }
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei; }
   .FAQTitle img {
     width: 24px;
     margin: 0 20px; }
 
+.faq_border {
+  -webkit-box-shadow: 0 0 0px 0.5px #808080;
+  box-shadow: 0 0 0px 0.5px #808080; }
+
 .faq-c {
-  font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
-  border: 0.5px solid #808080;
-  padding: 2em 2vw;
-  background-color: #f1f1f1;
+  font-family: BasicSansAlt-ExtraLight, Noto Sans TC, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+  -webkit-box-shadow: 0 0 0px 0.5px #808080;
+  box-shadow: 0 0 0px 0.5px #808080;
+  padding: 1.5em 2vw;
+  background-color: #f2f2f2;
   font-size: 12px; }
 
 .faq-t {
@@ -1425,7 +1456,7 @@ footer > .mobile-only > .links {
   width: 100%; }
 
 .ReviewTitle {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   position: absolute;
   color: #ffffff;
   font-size: 47px;
@@ -1444,7 +1475,7 @@ footer > .mobile-only > .links {
 .mouse {
   position: absolute;
   font-size: 14px;
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   color: white;
   margin: 30vh 0 10% 10%; }
   .mouse img {
@@ -1479,7 +1510,7 @@ img {
   overflow: hidden; }
 
 .main_title {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 20px;
   position: relative;
   display: inline-block;
@@ -1489,10 +1520,15 @@ img {
   background-color: black;
   color: white;
   padding: 20px 20px;
-  font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei; }
+  font-family: BasicSansAlt-Bold, Noto Sans TC, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
 .wrapper {
   max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.wrapper_big {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -1506,15 +1542,15 @@ img {
   line-height: 48.72px;
   padding-top: 10vw;
   padding-bottom: 10vw;
-  font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
+  font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
 .little_title {
   font-weight: normal;
   display: inline-block;
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 15px;
   line-height: 16.41px;
-  margin-left: 5%; }
+  margin-left: 1%; }
 
 .pic_TRANS {
   top: 120px;
