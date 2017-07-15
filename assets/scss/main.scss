@@ -87,6 +87,7 @@ img {
     font-weight: bolder;
     font-size: 37px;
     line-height: 48.72px;
+    padding-top: 10vw;
     padding-bottom: 10vw;
     font-family: $p600;
 }
@@ -97,7 +98,7 @@ img {
     font-family: $p200;
     font-size: 15px;
     line-height: 16.41px;
-    margin: -3.5% 0px 0px 14%;
+    margin-left: 5%;
 }
 
 .pic_TRANS {
@@ -169,6 +170,14 @@ img {
     .wrap {
         height: auto;
         padding-bottom: 300px;
+    }
+
+    .wrap .title {
+        padding-top: 90px;
+    }
+
+    .little_title {
+        margin: 0;
     }
 
     .pic_TRANS {
