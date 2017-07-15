@@ -278,26 +278,16 @@ a {
     color: #ffffff; }
 
 .register_btn {
-<<<<<<< HEAD
-  font-size: 14px;
-  padding: 15px;
-  background-color: white;
-  width: 300px;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 1px #444444;
-  box-shadow: 2px 2px 1px #444444;
-  opacity: .5;
-=======
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 17px;
-  background-color: #ffffff;
+  padding: 15px;
+  background-color: white;
   width: 350px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   margin-top: 200px;
   opacity: .8;
->>>>>>> 修改首頁議程回顧排版
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease; }
@@ -507,19 +497,14 @@ header {
 
 #register {
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-<<<<<<< HEAD
-  background-color: black;
-  color: white; }
-=======
   background-color: #000000;
   color: white;
   margin-left: 10px;
-  -webkit-transition: background-color  .9s ease;
-  -o-transition: background-color  .9s ease;
-  transition: background-color  .9s ease; }
->>>>>>> 修改首頁議程回顧排版
+  -webkit-transition: background-color .9s ease;
+  -o-transition: background-color .9s ease;
+  transition: background-color .9s ease; }
   #register:hover {
-    color: black;
+    color: #000000;
     background-color: white;
     -webkit-transition: background-color .5s ease;
     -o-transition: background-color .5s ease;
@@ -1502,8 +1487,8 @@ img {
   z-index: 0;
   top: -20px;
   left: 0;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: black;
+  color: white;
   padding: 20px 20px;
   font-family: BasicSansAlt-Bold, PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
@@ -1518,31 +1503,22 @@ img {
   margin-bottom: -150px; }
 
 .wrap .title {
-<<<<<<< HEAD
   font-weight: bolder;
-  font-size: 37px !important;
-  line-height: 40px !important; }
-
-.little_title {
-  font-weight: normal;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 15px; }
-
-#pic_TRANS_container {
-  height: 200px; }
-=======
   font-size: 37px;
   line-height: 48.72px;
   padding: 10vw;
   font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
 
 .little_title {
+  font-weight: normal;
+  display: inline-block;
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 15px;
   line-height: 16.41px;
   margin: -3.5% 0px 0px 14%; }
->>>>>>> 修改首頁議程回顧排版
+
+#pic_TRANS_container {
+  height: 200px; }
 
 .pic_TRANS {
   top: 120px;
