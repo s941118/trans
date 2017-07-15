@@ -37,14 +37,15 @@ header {
 
 #nav {
     -webkit-overflow-scrolling: touch;
-    font-size: 15px;
+    font-size: 15x;
     color: $main;
     z-index: 1;
     position: relative;
     transition: .3s ease;
     background-color: #000;
 
-    @media screen and (max-width: $breakpoint-small) {
+
+    @media screen and (max-width: 768px) {
         z-index: 100;
         position: absolute;
         width: 100%;
@@ -56,7 +57,7 @@ header {
 
 
 .nav {
-    font-family: $p200;
+    font-family: $p400;
     font-size: 14px;
     margin: 0 0 0 auto; //靠左ＱＱ
     @media screen and (max-width: 768px) {
@@ -67,18 +68,18 @@ header {
 .nav ul {
     width: 100%;
     max-width: 1024px;
-    margin: 20px 0 0 auto;
+    margin: 15px 0 0 auto;
     padding-right: 10px;
     text-align: right;
 }
 
 // .nav li{
-// 	display: inline-block;
-// 	max-width: 250px;
-// 	text-align: right;
+//  display: inline-block;
+//  max-width: 250px;
+//  text-align: right;
 // }
 // #nav li:last-child{
-// 	max-width: 175px;
+//  max-width: 175px;
 // }
 .nav li {
     position: relative;
@@ -110,12 +111,13 @@ header {
 }
 
 .nav li:nth-last-child(2) {
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 .nav li a {
     border-bottom: 0px solid #000000;
     padding-bottom: 3px;
+
 
     &:hover {
         border-bottom: 1px solid #000000;
@@ -123,12 +125,24 @@ header {
     }
 }
 
+.nav li:nth-last-child(3) :hover {
+    border: 0px solid #000000;
+    transition: border .5s ease;
+}
+
+.nav li:nth-last-child(4),
+.nav li:nth-last-child(5) {
+    margin-left: -10px;
+}
+
 #register {
     font-family: $p200;
-    background-color: black;
+    background-color: #000000;
     color: white;
+    margin-left: 10px;
+    transition: background-color .9s ease;
     &:hover {
-        color: black;
+        color: #000000;
         background-color: white;
         transition: background-color .5s ease;
     }

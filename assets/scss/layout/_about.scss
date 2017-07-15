@@ -1,18 +1,17 @@
-.about {
-    font-size: 30px;
-    background-size: cover;
-    position: relative;
-}
+.about {}
 
 .about_content {
+    background-color: rgba( 255, 255, 255, 0.2);
+    font-family: $p100;
     position: relative;
     font-size: 14px;
-    color: #000000;
+    color: #666666;
     width: 100%;
-    margin: 10vh 0;
+    margin: 10vh 0 30vh 0;
     padding: 10% 15%;
-    line-height: 25px;
-    border-radius: 10px;
+    line-height: 21.21px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
     text-align: justify;
 }
 
@@ -25,14 +24,15 @@
 
 
 .about_content_2 {
+    background-color: rgba( 255, 255, 255, 0.6);
     font-family: $p100;
     font-size: 14px;
-    margin: 10vh 0;
+    margin: 10% 0 5% 0;
     color: #000000;
     line-height: 16px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 70, .15);
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
 }
 
 .content_title_2 {
@@ -43,11 +43,10 @@
 }
 
 .about_contnet_L {
-    display: inline-block;
-    padding: 20vh 12%;
+    padding: 14% 10% 3% 10%;
     margin: 0 auto;
     img {
-        width: 236px;
+        width: 100%;
     }
 }
 
@@ -55,7 +54,7 @@
     text-align: justify;
     font-size: 14px;
     display: inline-block;
-    padding: 58px 129px 58px 40px;
+    padding: 5% 10% 3% 10%;
 }
 
 .about_subtitle {
@@ -96,13 +95,14 @@
 
 .about_content_3 {
     width: 100%;
-    margin: 10px 0;
+    margin: 13px 0;
+
 
     .about_contnet3_L {
-        font-family: $p100;
 
         img {
             width: 100%;
+            margin: 0 0 -4px 0;
         }
     }
 
@@ -110,6 +110,7 @@
 
         img {
             width: 100%;
+            margin: 0 0 -4px 0;
         }
     }
 
@@ -124,6 +125,7 @@
     }
 
     .about_contnet3_content {
+        font-family: $p200;
         font-size: 14px;
     }
 }

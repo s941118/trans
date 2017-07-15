@@ -3,29 +3,17 @@ $(document).ready(function() {
     $('body').removeClass('hide')
     $('#nav').on('click', 'a', function() {
         $('body').addClass('hide')
-    })
-
-    /// 載入 partial 們
-    // $('#nav').load('../../partail/_nav.html');
-    $('#header').load('../../partail/_header.html', function() {
-        $('button.navbar-toggle').click(function() {
-            $(this).closest('nav').toggleClass('toggled');
-        });
     });
-    $('#footer').load('../../partail/_footer.html');
-
 
     /// 載入 partial 們
     // $('#nav').load('../../partail/_nav.html');
     $('#header').load('../partail/_header.html');
     $('#footer').load('../partail/_footer.html');
 
-
     $('#header').on('click', '#mobile-nav', function() {
         $('.mobile-nav-btn').toggleClass('active');
         $('#mobile-nav-list').toggleClass('active');
     });
-
 
     //FAQ展開的部分
     $(".faq-q").click(function() {
@@ -45,10 +33,9 @@ $(document).ready(function() {
     // CommunityPartner
     let target
 
-
     $(window).bind('resize', function() {
         target = $('#partner_link').offset().top
-    }).resize()
+    }).resize();
 
     $(window).bind('scroll', function() {
         let whereAmI = $(this).scrollTop()
@@ -68,6 +55,7 @@ $(document).ready(function() {
             tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
             others = $this.closest('li').siblings().children('a'),
             target = $this.attr('href');
+
         others.removeClass('active');
         $this.addClass('active');
         $(tabgroup).children('div').hide();

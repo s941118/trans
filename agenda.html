@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body id="trans">
+<body id="trans" style="background-image:url('../assets/img/agenda/bg_2.png');background-size: cover;background-position: 35% 0;
+  background-repeat: no-repeat;
+  " >
   <header id="header"></header>
 
   <div class="pic1 img-bg-cover" style="background-image: url('assets/img/agenda/bg.jpg'); background-position: center 35%;"></div>
@@ -41,11 +43,12 @@
 			</a>
 			<a class="box" href="#sideStageAgenda">
 				<div class="left">
-					Main Stage<br>
+					TRANS Salon<br>
 					Agenda >>
+
 				</div>
 				<div class="right">
-					<img src="assets/img/agenda/map1.svg" alt="">
+					<img src="assets/img/agenda/map2.svg" alt="">
 				</div>
 			</a>
 		</div>
@@ -60,15 +63,18 @@
 				<div class="time">
 					<div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
 					<div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
-					<b>27 TH August</b>
+
+					<div v-if="mainStageDay === 1" class="date">26 TH August</div>
+					<div v-if="mainStageDay === 2" class="date">27 TH August</div>
+					<!-- <b>27 TH August</b> -->
 				</div>
 			</div>
 			<div v-if="mainStageDay === 1" class="agenda-table">
 				<div class="tr th">
-					<div class="tr-time">TIME</div>
-					<div class="tr-title">TITLE</div>
-					<div class="tr-content">CONTENT</div>
-					<div class="tr-speaker">SPEAKER</div>
+					<div class="tr-time" >TIME</div>
+					<div class="tr-title" >TITLE</div>
+					<div class="tr-content" >CONTENT</div>
+					<div class="tr-speaker" >SPEAKER</div>
 				</div>
 				<div class="tr">
 					<div class="tr-time">09:00 - 09:30</div>
@@ -98,14 +104,14 @@
 						2. What's Trending: A Comprehensive Study of Singapore’s Healthcare Startup Ecosystem 
 					</div>
 					<div class="tr-speaker">
-						Ylex de Winter<br><br>
+						Alex de Winter<br><br>
 						James Huang
 					</div>
 				</div>
 				<div class="tr">
 					<div class="tr-time">11:10-12:00</div>
 					<div class="tr-title">
-						Panel talk<br>
+						Panel Talk<br>
 						New Worlds
 					</div>
 					<div class="tr-content">
@@ -113,8 +119,8 @@
 						2. Match Making: A Whole New Model of Accelerating Healthcare Startups
 					</div>
 					<div class="tr-speaker">
-						YDanny Yeung<br><br>
-						Sidney Yee
+						Danny Yeung<br><br><br>
+						Chris Edell
 					</div>
 				</div>
 				<div class="tr">
@@ -124,7 +130,7 @@
 						Let There Be Light
 					</div>
 					<div class="tr-content">
-						1. The Challenges and Opportunities of the Aging Industry
+						The Challenges and Opportunities of the Aging Industry
 					</div>
 					<div class="tr-speaker">
 						Liang-Kung Chen
@@ -133,7 +139,7 @@
 				<div class="tr">
 					<div class="tr-time">12:20-14:00</div>
 					<div class="tr-title">
-						KRest Time 
+						Rest and Refuel
 					</div>
 					<div class="tr-content">
 						
@@ -145,11 +151,11 @@
 				<div class="tr">
 					<div class="tr-time">14:00-15:10</div>
 					<div class="tr-title">
-						Panel talk <br>
+						Panel Talk <br>
 						Courage to Set Sail: Adventurous Stories Told
 					</div>
 					<div class="tr-content">
-						1. Deepika Bodapati: Founder of Athelas/Blogger/Researcher<br><br>
+						1. Deepika Bodapati: Founder of Athelas / Blogger / Researcher<br><br>
 						2. Katherine Jin vs. Ebola Virus <br><br>
 						3. Daniel Penn: Quality PRD Platform Builder
 					</div>
@@ -157,6 +163,18 @@
 						Deepika Bodapati<br><br>
 						Katherine Jin<br><br>
 						Daniel Penn
+					</div>
+				</div>
+				<div class="tr">
+					<div class="tr-time">15:20-15:45</div>
+					<div class="tr-title">
+						Fireside Chat
+					</div>
+					<div class="tr-content">
+						Valuable Lessons from VentureCraft Investment Group Founder Isaac Ho VentureCraft
+					</div>
+					<div class="tr-speaker">
+						Isaac Ho
 					</div>
 				</div>
 				<div class="tr">
@@ -178,7 +196,7 @@
 						A New Course in Healthcare
 					</div>
 					<div class="tr-content">
-						1.The Future Trend in Healthcare: A Comprehensive Study of the Japanese Healthcare Industry 
+							The Future Trend in Healthcare: A Comprehensive Study of the Japanese Healthcare Industry 
 					</div>
 					<div class="tr-speaker">
 						Keiichi Ohwari<br>
@@ -197,7 +215,7 @@
 				<div class="tr">
 					<div class="tr-time">09:00-10:00</div>
 					<div class="tr-title">
-						Keynote Speech <br><br>
+						Keynote Speech <br>
 						What's On the Horizon
 					</div>
 					<div class="tr-content">
@@ -212,7 +230,7 @@
 				<div class="tr">
 					<div class="tr-time">10:10-11:00</div>
 					<div class="tr-title">
-						Panel talk <br><br>
+						Panel Talk <br>
 						Bio-innovation Island Chain Hopping: Healthcare x Digital Health
 
 					</div>
@@ -221,14 +239,14 @@
 						2. The Advantages of Going Digital: Applications of Digital Health 
 					</div>
 					<div class="tr-speaker">
-						Ruchit Nagar<br><br>
+						Ruchit Nagar<br><br><br>
 						Ching-Tse Tseng
 					</div>
 				</div>
 				<div class="tr">
 					<div class="tr-time">11:10-12:20</div>
 					<div class="tr-title">
-						Panel Talk<br><br>
+						Panel Talk<br>
 						Bio-innovation Island Chain Hopping: Healthcare x Precision Medicine
 					</div>
 					<div class="tr-content">
@@ -238,14 +256,14 @@
 					</div>
 					<div class="tr-speaker">
 						Jane SC Tsai<br><br>
-						Li han, Zhou<br><br>
+						Li han Zhou<br><br>
 						David Hysong
 					</div>
 				</div>
 				<div class="tr">
 					<div class="tr-time">12:20-14:00</div>
 					<div class="tr-title">
-						Rest Time 
+						Rest and Refuel
 					</div>
 					<div class="tr-content">
 					
@@ -257,11 +275,11 @@
 				<div class="tr">
 					<div class="tr-time">14:00-15:10</div>
 					<div class="tr-title">
-						Keynote <br><br>
+						Keynote <br>
 						Bio-innovation Island Chain Hopping: Healthcare x AI
 					</div>
 					<div class="tr-content">
-						1. How The World’s Largest Healthcare IT Company Revolutionize the U.S. and Global Healthcare Market<br><br>
+						1. How The World’s Largest Healthcare IT Company Revolutionizes the U.S. and Global Healthcare Market<br><br>
 						2. When AI and Biotech Intertwine: A New Solution For Blood Testing 
 					</div>
 					<div class="tr-speaker">
@@ -272,18 +290,18 @@
 				<div class="tr">
 					<div class="tr-time">14:50-16:00</div>
 					<div class="tr-title">
-						Panel Talk<br><br>
+						Panel Talk<br>
 						Scouting for the Next Columbus: VC and Accelerator Talks
 
 					</div>
 					<div class="tr-content">
-					1. From the Viewpoint of a VC based in Korea: Investment Strategy of KTB Network <br><br>
-					2. From the Viewpoint of a VC based in Singapore: Investment Strategy of Venturecraft <br><br>
-					3. The StartX Model for Entrepreneurship: Shared Learnings from Stanford University and Hospital's Startup Accelerator
+						1. From the Viewpoint of a VC based in Korea: Investment Strategy of KTB Network <br><br>
+						2. From the Viewpoint of a VC based in Singapore: Investment Strategy of Venturecraft <br><br>
+						3. The StartX Model for Entrepreneurship: Shared Learnings from Stanford University and Hospital's Startup Accelerator
 					</div>
 					<div class="tr-speaker">
-						Jiwoong <br><br>
-						Ong Jeong Shing <br><br>
+						Chun Jiwoong <br><br><br>
+						Ong Jeong Shing <br><br><br>
 						Andrew Lee
 					</div>
 				</div>
@@ -298,7 +316,7 @@
 						2. Top Reasons to Build a Global Startup: A Discussion of the Challenges and Opportunities of Changing the World at Scale
 					</div>
 					<div class="tr-speaker">
-						Steven Mo<br>
+						Steven Mo<br><br>
 						Allison Baum
 					</div>
 				</div>
@@ -313,7 +331,7 @@
 						2. Pioneers of the Medical System: Sutter Health
 					</div>
 					<div class="tr-speaker">
-						 Ming Fang<br>
+						Ming Fang<br><br><br>
 						Albert Chan, M.S
 					</div>
 				</div>
@@ -333,16 +351,17 @@
 		</div>
 		<div id="sideStageAgenda" class="agenda-wrap">
 			<div class="title">
-				<h2>Side Stage Agenda</h2>
+				<h2>TRANS Salon Agenda</h2>
 				<img src="assets/img/agenda/map2.svg" alt="">
 			</div>
 			<div class="agenda-tab">
 				<div @click="changeDay('sideStageDay', 1)" class="tab-btn" :class="{ active: sideStageDay === 1 }">Day 1</div>
 				<div @click="changeDay('sideStageDay', 2)" class="tab-btn" :class="{ active: sideStageDay === 2 }">Day 2</div>
 				<div class="time">
-					<div v-if="sideStageDay === 1" class="daytitle">Day 1</div>
-					<div v-if="sideStageDay === 2" class="daytitle">Day 2</div>
-					<b>26 TH August</b>
+				<div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
+					<div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
+					<div v-if="mainStageDay === 1" class="date">26 TH August</div>
+					<div v-if="mainStageDay === 2" class="date">27 TH August</div>
 				</div>
 			</div>
 			<div v-if="sideStageDay === 1" class="agenda-table">
@@ -366,7 +385,7 @@
 				<div class="tr">
 					<div class="tr-time">10:30-12:30</div>
 					<div class="tr-title">
-						Bugle call for the Next Generation
+						Bugle Call for the Next Generation
 					</div>
 					<div class="tr-content">
 		
@@ -391,7 +410,7 @@
 				<div class="tr">
 					<div class="tr-time">14:00-15:00</div>
 					<div class="tr-title">
-						Keynote speech<br>
+						Keynote Speech<br>
 						The Call from New Stars：When Startups Meet Students 
 					</div>
 					<div class="tr-content">
@@ -418,10 +437,10 @@
 				<div class="tr">
 					<div class="tr-time">16:00 - 17:00</div>
 					<div class="tr-title">
-						The guidance from wise men
+						The Guidance from Wise Men
 					</div>
 					<div class="tr-content">
-						Reply from Main Stage Speakers
+						Advice from Main Stage Speakers
 					</div>
 					<div class="tr-speaker">
 				
@@ -449,7 +468,7 @@
 				<div class="tr">
 					<div class="tr-time">9:30-12:30</div>
 					<div class="tr-title">
-						Bugle call for the Next Generation
+						Bugle Call for the Next Generation
 					</div>
 					<div class="tr-content">
 		
@@ -474,32 +493,32 @@
 				<div class="tr">
 					<div class="tr-time">14:00-15:40</div>
 					<div class="tr-title">
-						Keynote speech<br>
-						Different Lane of Traffic：The Different Possibility in Healthcare Area 
+						Keynote Speech<br>
+						Different Lane of Traffic：The Different Possibilities in Healthcare Area 
 					</div>
 					<div class="tr-content">
-						1.From Taiwan to The World - What I Saw in WHA
-						2.From Medicine to Curation - The Beauty of Pathology
-						3.From Student to Startup - The Story of Warmie Health
-						4.From Design To Medicine - The Innovative Way of Medical Education for Children
+						1.From Taiwan to The World - What I Saw in WHA<br><br>
+						2.From Medicine to Curation - The Beauty of Pathology<br><br>
+						3.From Student to Startup - The Story of Warmie Health<br><br>
+						4.From Design To Medicine - The Innovative Way of Medical Education for Children<br><br>
 					</div>
 					<div class="tr-speaker">
-						Gem Wu <br>
-						Yen-Lin Huang<br>
-						Frances Huang<br>
+						Gem Wu <br><br>
+						Yen-Lin Huang<br><br>
+						Frances Huang<br><br>
 						Esteher Wang
 					</div>
 				</div>
 				<div class="tr">
 					<div class="tr-time">16:00 - 17:00</div>
 					<div class="tr-title">
-						The guidance from wise men
+						The Guidance from Wise Men
 					</div>
 					<div class="tr-content">
 			
 					</div>
 					<div class="tr-speaker">
-						Reply from Main Stage Speakers
+						Advice from Main Stage Speakers
 					</div>
 				</div>
 			</div>

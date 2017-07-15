@@ -18,18 +18,20 @@
 }
 
 .register_btn {
-    font-size: 14px;
+    font-family: $p200;
+    font-size: 17px;
     padding: 15px;
     background-color: white;
-    width: 300px;
+    width: 350px;
     border-radius: 30px;
-    box-shadow: 2px 2px 1px #444444;
-    opacity: .5;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    margin-top: 200px;
+    opacity: .8;
     transition: .3s ease;
 
     &:hover {
         opacity: 1;
-        box-shadow: 2px 2px 1px #000000;
+        box-shadow: 0px 3px 8px 0px rgba( 0, 0, 0, 0.1);
     }
 }
 

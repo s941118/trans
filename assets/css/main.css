@@ -278,6 +278,7 @@ a {
     color: #ffffff; }
 
 .register_btn {
+<<<<<<< HEAD
   font-size: 14px;
   padding: 15px;
   background-color: white;
@@ -286,13 +287,24 @@ a {
   -webkit-box-shadow: 2px 2px 1px #444444;
   box-shadow: 2px 2px 1px #444444;
   opacity: .5;
+=======
+  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-size: 17px;
+  background-color: #ffffff;
+  width: 350px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  margin-top: 200px;
+  opacity: .8;
+>>>>>>> 修改首頁議程回顧排版
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease; }
   .register_btn:hover {
     opacity: 1;
-    -webkit-box-shadow: 2px 2px 1px #000000;
-    box-shadow: 2px 2px 1px #000000; }
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1); }
 
 .partner_btn_content {
   font-size: 15px;
@@ -411,7 +423,7 @@ header {
 
 #nav {
   -webkit-overflow-scrolling: touch;
-  font-size: 15px;
+  font-size: 15x;
   color: #BDC0D1;
   z-index: 1;
   position: relative;
@@ -431,7 +443,7 @@ header {
       transform: translateX(100%); } }
 
 .nav {
-  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 14px;
   margin: 0 0 0 auto; }
   @media screen and (max-width: 768px) {
@@ -441,7 +453,7 @@ header {
 .nav ul {
   width: 100%;
   max-width: 1024px;
-  margin: 20px 0 0 auto;
+  margin: 15px 0 0 auto;
   padding-right: 10px;
   text-align: right; }
 
@@ -472,7 +484,7 @@ header {
   font-size: 12px; }
 
 .nav li:nth-last-child(2) {
-  margin-left: 15px; }
+  margin-left: 40px; }
 
 .nav li a {
   border-bottom: 0px solid #000000;
@@ -483,10 +495,29 @@ header {
     -o-transition: border .5s ease;
     transition: border .5s ease; }
 
+.nav li:nth-last-child(3) :hover {
+  border: 0px solid #000000;
+  -webkit-transition: border .5s ease;
+  -o-transition: border .5s ease;
+  transition: border .5s ease; }
+
+.nav li:nth-last-child(4),
+.nav li:nth-last-child(5) {
+  margin-left: -10px; }
+
 #register {
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+<<<<<<< HEAD
   background-color: black;
   color: white; }
+=======
+  background-color: #000000;
+  color: white;
+  margin-left: 10px;
+  -webkit-transition: background-color  .9s ease;
+  -o-transition: background-color  .9s ease;
+  transition: background-color  .9s ease; }
+>>>>>>> 修改首頁議程回顧排版
   #register:hover {
     color: black;
     background-color: white;
@@ -918,20 +949,19 @@ footer > .mobile-only > .links {
   footer > .mobile-only {
     display: block; } }
 
-.about {
-  font-size: 30px;
-  background-size: cover;
-  position: relative; }
-
 .about_content {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
   position: relative;
   font-size: 14px;
-  color: #000000;
+  color: #666666;
   width: 100%;
-  margin: 10vh 0;
+  margin: 10vh 0 30vh 0;
   padding: 10% 15%;
-  line-height: 25px;
-  border-radius: 10px;
+  line-height: 21.21px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   text-align: justify; }
 
 .content_title {
@@ -941,15 +971,16 @@ footer > .mobile-only > .links {
   padding: 9% 0 4% 0; }
 
 .about_content_2 {
+  background-color: rgba(255, 255, 255, 0.6);
   font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
   font-size: 14px;
-  margin: 10vh 0;
+  margin: 10% 0 5% 0;
   color: #000000;
   line-height: 16px;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100%;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 70, 0.15);
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 70, 0.15); }
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05); }
 
 .content_title_2 {
   font-size: 14px;
@@ -958,17 +989,16 @@ footer > .mobile-only > .links {
   margin: 7% 0px; }
 
 .about_contnet_L {
-  display: inline-block;
-  padding: 20vh 12%;
+  padding: 14% 10% 3% 10%;
   margin: 0 auto; }
   .about_contnet_L img {
-    width: 236px; }
+    width: 100%; }
 
 .about_contnet_R {
   text-align: justify;
   font-size: 14px;
   display: inline-block;
-  padding: 58px 129px 58px 40px; }
+  padding: 5% 10% 3% 10%; }
 
 .about_subtitle {
   font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
@@ -998,13 +1028,13 @@ footer > .mobile-only > .links {
 
 .about_content_3 {
   width: 100%;
-  margin: 10px 0; }
-  .about_content_3 .about_contnet3_L {
-    font-family: BasicSansAlt-ExtraLight, PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei; }
-    .about_content_3 .about_contnet3_L img {
-      width: 100%; }
+  margin: 13px 0; }
+  .about_content_3 .about_contnet3_L img {
+    width: 100%;
+    margin: 0 0 -4px 0; }
   .about_content_3 .about_contnet3_R img {
-    width: 100%; }
+    width: 100%;
+    margin: 0 0 -4px 0; }
   .about_content_3 .about_contnet3_text {
     padding: 12% 0 0 3%;
     text-align: center; }
@@ -1012,6 +1042,7 @@ footer > .mobile-only > .links {
     font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-size: 24px; }
   .about_content_3 .about_contnet3_content {
+    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     font-size: 14px; }
 
 .video-container {
@@ -1094,8 +1125,8 @@ footer > .mobile-only > .links {
   justify-content: space-between;
   background-color: #fff;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   margin: 20px auto;
   width: 100%;
   max-width: 800px;
@@ -1109,7 +1140,7 @@ footer > .mobile-only > .links {
     flex: 0 0 auto; }
 
 .agenda-wrap {
-  margin-top: 70px; }
+  margin-top: 15%; }
   .agenda-wrap .title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1146,18 +1177,23 @@ footer > .mobile-only > .links {
     background-color: #000;
     color: #FFF; }
   .agenda-tab .time {
-    float: right; }
+    float: right;
+    font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
     .agenda-tab .time .daytitle {
-      font-size: 25px;
+      font-size: 32px;
       display: inline-block;
       font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
-    .agenda-tab .time b {
-      font-size: 13px;
+    .agenda-tab .time .date {
+      display: inline-block;
+      font-size: 16px;
       margin-left: 15px;
       font-family: BasicSansAlt-SemiBold, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+      .agenda-tab .time .date p {
+        vertical-align: super;
+        font-size: 9px; }
 
 .agenda-table {
-  margin-bottom: 10vh; }
+  margin-bottom: 40vh; }
   .agenda-table .tr {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1172,9 +1208,10 @@ footer > .mobile-only > .links {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 17px 0;
-    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
+    -webkit-box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
+    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    color: #4d4d4d; }
     .agenda-table .tr > * {
       padding: 0 15px; }
   .agenda-table .th > * {
@@ -1189,25 +1226,29 @@ footer > .mobile-only > .links {
     text-align: center; }
   .agenda-table .tr-title {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 220px;
-    -ms-flex: 0 0 220px;
-    flex: 0 0 220px;
+    -webkit-flex: 0 0 320px;
+    -ms-flex: 0 0 320px;
+    flex: 0 0 320px;
     font-size: 16px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
+    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    line-height: 19.12px; }
   .agenda-table .tr-content {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 0 320px;
-    -ms-flex: 1 0 320px;
-    flex: 1 0 320px;
+    -webkit-flex: 1 0 300px;
+    -ms-flex: 1 0 300px;
+    flex: 1 0 300px;
     font-size: 12px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
+    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    padding-right: 20px;
+    line-height: 15.12px; }
   .agenda-table .tr-speaker {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 120px;
-    -ms-flex: 0 0 120px;
-    flex: 0 0 120px;
+    -webkit-flex: 0 0 150px;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px;
     font-size: 12px;
-    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei; }
+    font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+    text-align: right; }
 
 .top {
   margin: 10% 9vw 100px 10%;
@@ -1418,10 +1459,10 @@ footer > .mobile-only > .links {
 
 .mouse {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
   font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   color: white;
-  margin: 70vh 0 10% 10%; }
+  margin: 30vh 0 10% 10%; }
   .mouse img {
     width: 2%;
     margin-right: 10px; }
@@ -1454,6 +1495,7 @@ img {
   overflow: hidden; }
 
 .main_title {
+  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 20px;
   position: relative;
   display: inline-block;
@@ -1476,6 +1518,7 @@ img {
   margin-bottom: -150px; }
 
 .wrap .title {
+<<<<<<< HEAD
   font-weight: bolder;
   font-size: 37px !important;
   line-height: 40px !important; }
@@ -1488,6 +1531,18 @@ img {
 
 #pic_TRANS_container {
   height: 200px; }
+=======
+  font-size: 37px;
+  line-height: 48.72px;
+  padding: 10vw;
+  font-family: BasicSansAlt-Black, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
+
+.little_title {
+  font-family: BasicSansAlt-Light, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+  font-size: 15px;
+  line-height: 16.41px;
+  margin: -3.5% 0px 0px 14%; }
+>>>>>>> 修改首頁議程回顧排版
 
 .pic_TRANS {
   top: 120px;
