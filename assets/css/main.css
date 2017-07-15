@@ -796,7 +796,7 @@ footer > .black-section {
 footer > .mobile-only {
   display: none;
   color: black;
-  background-color: #F7F7F7;
+  background: transparent;
   padding: 50px;
   padding-top: 20px;
   padding-bottom: 30px; }
@@ -1472,7 +1472,8 @@ img {
 
 .wrap {
   background-color: #F7F7F7;
-  height: 100vh; }
+  height: 100vh;
+  margin-bottom: -150px; }
 
 .wrap .title {
   font-weight: bolder;
