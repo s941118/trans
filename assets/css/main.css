@@ -286,7 +286,6 @@ a {
   border-radius: 30px;
   -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
-  margin-top: 200px;
   opacity: .8;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
@@ -801,7 +800,7 @@ section h2 {
     margin-top: 15px; }
 
 footer {
-  display: inline-block;
+  display: block;
   width: 100%; }
 
 footer > .black-section {
@@ -1499,8 +1498,7 @@ img {
 
 .wrap {
   background-color: #F7F7F7;
-  height: 100vh;
-  margin-bottom: -150px; }
+  height: 100vh; }
 
 .wrap .title {
   font-weight: bolder;
@@ -1516,9 +1514,6 @@ img {
   font-size: 15px;
   line-height: 16.41px;
   margin: -3.5% 0px 0px 14%; }
-
-#pic_TRANS_container {
-  height: 200px; }
 
 .pic_TRANS {
   top: 120px;
