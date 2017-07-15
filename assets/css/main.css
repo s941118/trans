@@ -988,9 +988,22 @@ footer > .mobile-only > .links {
   padding: 5% 10% 3% 10%; }
 
 .about_subtitle {
+  display: inline-table;
+  margin: 0;
   font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
-  width: 40%;
-  font-size: 45px; }
+  width: 100%;
+  font-size: 45px;
+  height: 300px;
+  padding-top: 217px;
+  padding-bottom: 70px;
+  padding-right: 130px;
+  font-weight: bolder; }
+  .about_subtitle .about_subtitle_wrapper {
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom; }
+    .about_subtitle .about_subtitle_wrapper b.pull-right {
+      float: right; }
 
 .about_data {
   width: 100%; }
@@ -1016,24 +1029,46 @@ footer > .mobile-only > .links {
 .about_content_3 {
   width: 100%;
   margin: 13px 0; }
+  .about_content_3 .card-text {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05); }
   .about_content_3 .about_contnet3_L img {
     width: 100%;
     margin: 0 0 -4px 0; }
   .about_content_3 .about_contnet3_R img {
     width: 100%;
     margin: 0 0 -4px 0; }
+  .about_content_3 .about_contnet3_L.card-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; }
+  .about_content_3 .about_contnet3_R.card-text {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; }
   .about_content_3 .about_contnet3_text {
-    padding: 12% 0 0 3%;
+    display: inline-table;
+    width: 100%;
+    height: 100%;
     text-align: center; }
-  .about_content_3 .about_contnet3_title {
-    font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
-    font-size: 24px; }
-  .about_content_3 .about_contnet3_content {
-    font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
-    font-size: 14px; }
+    .about_content_3 .about_contnet3_text .about_contnet3_text_wrapper {
+      display: table-cell;
+      vertical-align: middle;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .about_content_3 .about_contnet3_text .about_contnet3_text_wrapper .about_contnet3_title,
+      .about_content_3 .about_contnet3_text .about_contnet3_text_wrapper .about_contnet3_content {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+      .about_content_3 .about_contnet3_text .about_contnet3_text_wrapper .about_contnet3_title {
+        font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+        font-size: 24px;
+        font-weight: bold; }
+      .about_content_3 .about_contnet3_text .about_contnet3_text_wrapper .about_contnet3_content {
+        font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+        font-size: 14px; }
 
 .video-container {
-  margin: 5vh 0 10vh 0;
+  margin-bottom: 10vh;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -1048,6 +1083,44 @@ footer > .mobile-only > .links {
   left: 0;
   width: 100%;
   height: 100%; }
+
+@media screen and (max-width: 992px) {
+  .card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .card .card-image {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1; }
+    .card .card-text {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2; } }
+
+@media screen and (max-width: 768px) {
+  .about_subtitle {
+    font-size: 7vw;
+    font-weight: bolder;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    height: 30vw;
+    padding-bottom: 0; }
+    .about_subtitle .about_subtitle_wrapper b {
+      float: left !important; } }
 
 .speakers-container {
   margin: 60px auto 100px;
