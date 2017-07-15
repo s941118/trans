@@ -1,145 +1,142 @@
-
-.about {
-
-}
+.about {}
 
 .about_content {
-	background-color: rgba( 255, 255, 255 ,0.2);
-	font-family: $p100;
-	position: relative;
-	font-size: 14px;
-	color: #666666;
-	width: 100%;
-	margin: 10vh 0 30vh 0;
-	padding: 10% 15%;
-	line-height: 21.21px;
-	border-radius: 20px;
-	box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
-	text-align:justify;
+    background-color: rgba( 255, 255, 255, 0.2);
+    font-family: $p100;
+    position: relative;
+    font-size: 14px;
+    color: #666666;
+    width: 100%;
+    margin: 10vh 0 30vh 0;
+    padding: 10% 15%;
+    line-height: 21.21px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    text-align: justify;
 }
 
 .content_title {
-	font-family: $p100;
-	font-size: 14px;
-	color: $contentTitle;
-	padding: 9% 0 4% 0;
+    font-family: $p100;
+    font-size: 14px;
+    color: $contentTitle;
+    padding: 9% 0 4% 0;
 }
 
 
 .about_content_2 {
-	background-color: rgba( 255, 255, 255 ,0.6);
-	font-family: $p100;
-	font-size: 14px;
-	margin: 10% 0 5% 0;
-	color:#000000;
-	line-height: 16px;
-	border-radius: 20px;
-	width: 100%;
-	box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    background-color: rgba( 255, 255, 255, 0.6);
+    font-family: $p100;
+    font-size: 14px;
+    margin: 10% 0 5% 0;
+    color: #000000;
+    line-height: 16px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
 }
 
 .content_title_2 {
-	font-size: 14px;
-	line-height:17px;
-	color: $contentTitle;
-	margin:7% 0px;	
+    font-size: 14px;
+    line-height: 17px;
+    color: $contentTitle;
+    margin: 7% 0px;
 }
 
 .about_contnet_L {
-	padding: 14% 10% 3% 10%;
-	margin: 0 auto;
-	img {
-		width: 100%;
-	}	
+    padding: 14% 10% 3% 10%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
 }
 
 .about_contnet_R {
-	text-align:justify;
-	font-size: 14px;
-	display: inline-block;
-	padding: 5% 10% 3% 10%;
+    text-align: justify;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5% 10% 3% 10%;
 }
 
 .about_subtitle {
-	font-family: $p600;
-	width: 40%;
-	font-size: 45px;
+    font-family: $p600;
+    width: 40%;
+    font-size: 45px;
 }
 
 
 .about_data {
-	width: 100%;
+    width: 100%;
 
-	.about_data_info {
-		width:100%;
-		max-width: 1010px;
-		margin:0 auto;
+    .about_data_info {
+        width: 100%;
+        max-width: 1010px;
+        margin: 0 auto;
 
-		.about_data_content {
-			display: inline-block;
-			margin: 10% 0 ;
-			text-align: center;
-			img { 
-				width: 25%;
-			}
-			.about_data_number { 
-				font-family: $p600;
-				font-size: 36px;
-				color:white;
-			}
-			.about_data_text {
-				font-family: $p100;
-				font-size: 17px;
-				color:white;
-			}
-		}
-	}
+        .about_data_content {
+            display: inline-block;
+            margin: 10% 0;
+            text-align: center;
+            img {
+                width: 25%;
+            }
+            .about_data_number {
+                font-family: $p600;
+                font-size: 36px;
+                color: white;
+            }
+            .about_data_text {
+                font-family: $p100;
+                font-size: 17px;
+                color: white;
+            }
+        }
+    }
 }
 
 .about_content_3 {
-	width: 100%;
-	margin: 13px 0;
+    width: 100%;
+    margin: 13px 0;
 
 
-	.about_contnet3_L {
-		
-		img{
-			width: 100%;
-			margin: 0 0 -4px 0;
-		}
-	}
+    .about_contnet3_L {
 
-	.about_contnet3_R {
-		
-		img{
-			width: 100%;
-			margin: 0 0 -4px 0;
-		}
-	}
+        img {
+            width: 100%;
+            margin: 0 0 -4px 0;
+        }
+    }
 
-	.about_contnet3_text {
-		padding:12% 0 0 3%;
-		text-align: center;
-	}
+    .about_contnet3_R {
 
-	.about_contnet3_title {
-		font-family: $p400;
-		font-size: 24px;
-	}
+        img {
+            width: 100%;
+            margin: 0 0 -4px 0;
+        }
+    }
 
-	.about_contnet3_content {
-		font-family: $p200;
-		font-size: 14px;
-	}
+    .about_contnet3_text {
+        padding: 12% 0 0 3%;
+        text-align: center;
+    }
+
+    .about_contnet3_title {
+        font-family: $p400;
+        font-size: 24px;
+    }
+
+    .about_contnet3_content {
+        font-family: $p200;
+        font-size: 14px;
+    }
 }
 
 .video-container {
-	margin: 5vh 0 10vh 0;
- 	position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
+    margin: 5vh 0 10vh 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
 .video-container iframe,
