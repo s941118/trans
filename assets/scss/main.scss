@@ -80,6 +80,7 @@ img {
 }
 
 .main_title {
+	font-family: $p200;
 	font-size: 20px;
 	position: relative;
 	display: inline-block;
@@ -108,16 +109,18 @@ img {
 
 .wrap .title {
 	font-size:37px;
-	line-height: 40px;
+	line-height: 48.72px;
 	padding: 10vw;
+	font-family: $p600;
 
 }
 
 
 .little_title {
+	font-family: $p200;
 	font-size:15px;
-	line-height: 15px;
-	margin: -35px 0px 0px 150px;
+	line-height: 16.41px;
+	margin: -3.5% 0px 0px 14%;
 }
 
 .pic_TRANS {

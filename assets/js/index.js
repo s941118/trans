@@ -8,8 +8,8 @@ $(window).load(function() {
 
 	/// 載入 partial 們
 	// $('#nav').load('../../partail/_nav.html');
-	$('#header').load('../../partail/_header.html');
-	$('#footer').load('../../partail/_footer.html');
+	$('#header').load('../partail/_header.html');
+	$('#footer').load('../partail/_footer.html');
 
 
 	$('#header').on('click', '#mobile-nav', function() {
