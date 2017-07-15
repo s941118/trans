@@ -169,7 +169,8 @@ img {
 @media screen and (max-width: $breakpoint-medium) {
     .wrap {
         height: auto;
-        padding-bottom: 300px;
+        padding-bottom: 200px;
+        margin-bottom: -150px;
     }
 
     .wrap .title {

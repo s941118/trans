@@ -924,8 +924,6 @@ footer > .mobile-only > .links {
   padding-right: 0; }
 
 @media screen and (max-width: 768px) {
-  footer {
-    margin-top: -200px; }
   .info {
     display: none; }
   .info-mobile > table {
@@ -1589,7 +1587,8 @@ img {
 @media screen and (max-width: 992px) {
   .wrap {
     height: auto;
-    padding-bottom: 300px; }
+    padding-bottom: 200px;
+    margin-bottom: -150px; }
   .wrap .title {
     padding-top: 90px; }
   .little_title {
