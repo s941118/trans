@@ -87,7 +87,7 @@ img {
     font-weight: bolder;
     font-size: 37px;
     line-height: 48.72px;
-    padding: 10vw;
+    padding-bottom: 10vw;
     font-family: $p600;
 }
 
@@ -168,6 +168,7 @@ img {
 @media screen and (max-width: $breakpoint-medium) {
     .wrap {
         height: auto;
+        padding-bottom: 300px;
     }
 
     .pic_TRANS {

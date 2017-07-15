@@ -190,6 +190,10 @@ footer>.mobile-only>.links {
 }
 
 @media screen and (max-width: $breakpoint-small) {
+    footer {
+        margin-top: -200px;
+    }
+
     .info {
         display: none;
     }
