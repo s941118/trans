@@ -1,72 +1,94 @@
-footer{
-	display: inline-block;
-	background-color:#000000 ;
-	width: 100%;
-	color:#ffffff;
-	padding: 100px 10px 50px 50px;
-	
+footer {
+    display: inline-block;
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    padding: 50px;
 }
 
-.info{
-	text-align: right;
-	margin: 0 10px 0 0;
+.info {
+    text-align: right;
+    margin: 0 10px 0 0;
+
+    table {
+        font-size: 15px;
+        display: inline-table;
+        max-width: $breakpoint-medium;
+        white-space: nowrap;
+
+        td {
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: left;
+        }
+
+        td:first-child {
+            padding-left: 0;
+        }
+        td:last-child {
+            padding-right: 0;
+        }
+
+        .organizer {
+            //border-right: 0.75px solid white;
+            img {
+                width: auto;
+                height: 30px;
+                vertical-align: text-top;
+            }
+        }
+
+        .powered-by {
+            //border-right: 0.75px solid white;
+        }
+
+        .followUs {
+            img {
+                vertical-align: text-top;
+                width: auto;
+                height: 30px;
+                margin: 0px 5px;
+            }
+        }
+
+        table.inner {
+            display: inline-table;
+            vertical-align: text-top;
+            text-align: left;
+
+            td {
+                vertical-align: text-top;
+                padding: 10px;
+                padding-top: 0;
+            }
+
+            td:nth-child(1) {
+                padding-left: 0;
+            }
+        }
+
+        .contactUs {        
+            .contactMail,
+            .contactPhone {
+                text-align: right;
+                padding-right: 0;
+            }
+
+            .contactMail img,
+            .contactPhone img {
+                display: inline;
+                width: auto;
+                height: 12px;
+            }
+
+            .contactPhone img {
+                height: 18px;
+            }
+        }
+    }
 }
 
-.organizer{
-	height:44px;
-	display: inline;
-	margin: 0 10px 0 10px;
-	padding-right: 20px;
-	border-right: 0.75px solid white;
-	img{
-		vertical-align:text-top;	
-		width: 15%;
-	}
-}
-
-.followUs{
-	display: inline;
-	margin: 0 10px 0 10px;
-	height: 44px;
-	img{
-		vertical-align:text-top;	
-		width: 30px;
-		margin: 0px 5px;
-	}
-}
-
-.contactUs{
-	display: inline;
-	margin: 0 10px 0 10px;		
-	height: 44px;
-	padding-left: 20px;
-	font-size: 12px;
-	text-align:left;
-	border-left: 0.75px solid white;
-
-	.contactMail{
-		display: inline;
-		text-align:left;
-		margin: 0 0 0 10px;
-		img{
-			width:15px;
-			vertical-align:middle;	
-		}
-	}
-
-	.contactPhone{
-		display: inline;
-		text-align:left;
-		margin: -5px 35px 0 10px;
-		img{
-			width:10px;
-			vertical-align:middle;	
-		}	
-	}
-}
-
-.copyright{
-	font-size: 12px;
-	margin: 50px 0 0 0 ;
-
+.copyright {
+    font-size: 12px;
 }

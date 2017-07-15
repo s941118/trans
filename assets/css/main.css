@@ -788,58 +788,59 @@ footer {
   display: inline-block;
   background-color: #000000;
   width: 100%;
-  color: #ffffff;
-  padding: 100px 10px 50px 50px; }
+  color: white;
+  padding: 50px; }
 
 .info {
   text-align: right;
   margin: 0 10px 0 0; }
-
-.organizer {
-  height: 44px;
-  display: inline;
-  margin: 0 10px 0 10px;
-  padding-right: 20px;
-  border-right: 0.75px solid white; }
-  .organizer img {
-    vertical-align: text-top;
-    width: 15%; }
-
-.followUs {
-  display: inline;
-  margin: 0 10px 0 10px;
-  height: 44px; }
-  .followUs img {
-    vertical-align: text-top;
-    width: 30px;
-    margin: 0px 5px; }
-
-.contactUs {
-  display: inline;
-  margin: 0 10px 0 10px;
-  height: 44px;
-  padding-left: 20px;
-  font-size: 12px;
-  text-align: left;
-  border-left: 0.75px solid white; }
-  .contactUs .contactMail {
-    display: inline;
-    text-align: left;
-    margin: 0 0 0 10px; }
-    .contactUs .contactMail img {
-      width: 15px;
-      vertical-align: middle; }
-  .contactUs .contactPhone {
-    display: inline;
-    text-align: left;
-    margin: -5px 35px 0 10px; }
-    .contactUs .contactPhone img {
-      width: 10px;
-      vertical-align: middle; }
+  .info table {
+    font-size: 15px;
+    display: inline-table;
+    max-width: 992px;
+    white-space: nowrap; }
+    .info table td {
+      padding: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: left; }
+    .info table td:first-child {
+      padding-left: 0; }
+    .info table td:last-child {
+      padding-right: 0; }
+    .info table .organizer img {
+      width: auto;
+      height: 30px;
+      vertical-align: text-top; }
+    .info table .followUs img {
+      vertical-align: text-top;
+      width: auto;
+      height: 30px;
+      margin: 0px 5px; }
+    .info table table.inner {
+      display: inline-table;
+      vertical-align: text-top;
+      text-align: left; }
+      .info table table.inner td {
+        vertical-align: text-top;
+        padding: 10px;
+        padding-top: 0; }
+      .info table table.inner td:nth-child(1) {
+        padding-left: 0; }
+    .info table .contactUs .contactMail,
+    .info table .contactUs .contactPhone {
+      text-align: right;
+      padding-right: 0; }
+    .info table .contactUs .contactMail img,
+    .info table .contactUs .contactPhone img {
+      display: inline;
+      width: auto;
+      height: 12px; }
+    .info table .contactUs .contactPhone img {
+      height: 18px; }
 
 .copyright {
-  font-size: 12px;
-  margin: 50px 0 0 0; }
+  font-size: 12px; }
 
 .about {
   font-size: 30px;
