@@ -171,7 +171,7 @@
             visibility: hidden;
             height: 0;
             opacity: 0;
-            transition: all 0.3s ease;
+            transition: opacity 0.4s ease;
         }
     }
 }
@@ -252,7 +252,7 @@
             visibility: hidden;
             height: 0;
             opacity: 0;
-            transition: all 0.3s ease;
+            transition: opacity 0.4s ease;
         }
 
         .tr-title {
