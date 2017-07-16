@@ -132,6 +132,7 @@ footer>.mobile-only>.links {
 
 .copyright {
     font-size: 12px;
+    line-height: 25px;
 
     .mobile-only {
         display: none;
@@ -144,7 +145,12 @@ footer>.mobile-only>.links {
 
 .info-mobile>table {
     display: none;
-
+    margin-left: 10vw;
+    font-size: 10px;
+    margin: -5% 0 0 25%;
+    img {
+        width: 70%;
+    }
     .inner {
         tr:nth-child(1)>td {
             padding-bottom: 10px;
@@ -167,7 +173,7 @@ footer>.mobile-only>.links {
         }
 
         .contactPhone img {
-            height: 16px;
+            height: 12px;
         }
     }
 }
@@ -184,6 +190,7 @@ footer>.mobile-only>.links {
     padding-bottom: 10px;
     text-align: left;
     vertical-align: top;
+    
 }
 
 .info-mobile>table>tbody>tr>td:nth-child(1) {
@@ -205,6 +212,7 @@ footer>.mobile-only>.links {
 
     .copyright>.mobile-only {
         display: inline;
+        line-height: 20px;
     }
 
     footer>.mobile-only {

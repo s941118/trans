@@ -17,12 +17,16 @@
 }
 
 .faq_border{
-  box-shadow: 0 0 0px 0.5px #808080; 
+  box-shadow: 0 0 0px 1px #808080; 
+  @media screen and (max-width: $breakpoint-small) {
+    margin: 0 5%;
+  }
+
 }
 
 .faq-c {
-	font-family: $p100;
-  box-shadow: 0 0 0px 0.5px #808080; 
+	font-family: $p200;
+  box-shadow: 0 0 0px 1px #808080; 
   padding:1.5em 2vw;
   background-color: #f2f2f2;
   font-size: 12px;

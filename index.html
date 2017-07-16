@@ -18,10 +18,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body id="trans">
-  <header id="header"></header>
+<body id="trans" style="background-color: #f7f7f7;">
+  <header id="header" style="z-index: 12;"></header>
   <div class="wrap">
-    
     <div class="content">
       <div class="container-fluid">
         <div class="section">
@@ -33,13 +32,13 @@
             </div>
             <br><br><br><br>
             <button type="button" class="register_btn">
-            <a href="https://www.facebook.com/">register now</a>
+            <a href="http://www.accupass.com/go/2017TRANSs">register now</a>
           </button>
           </div>
           
         </div>
 
-        <!-- <div id="pic_TRANS_container">
+        <div id="pic_TRANS_container">
           <div class="pic_TRANS">
             <div class="index-pic-trans">
               <img src="assets/img/index/T.png" alt="">
@@ -73,7 +72,16 @@
               </tbody>
             </table>
           </div>
-        </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="section">
+        <div class="title_2">
+          <div class="title-heading_2">2O17. <br>Aug.  26 - 27</div>
+          <div class="little_title_2">
+            Songshan Cultural and <br>
+            Creative Park Warehouse 1 & 4<br>
+          </div>
       </div>
     </div>
      <video id="videoBg" autoplay loop muted="muted" class="fillWidth fadeIn animated">
@@ -85,5 +93,15 @@
 <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
 <script src="assets/js/vendor/vue.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script>
+$(document).ready(function() {
+  
+  let w = $(window).width()
+  console.log(w)
+  if ( w <= 768 ) {
+    $('#videoBg').remove()
+  }
 
+})
+</script>
 </html>

@@ -101,6 +101,52 @@ img {
   padding-bottom: 10vw;
   font-family: $p600;
   z-index: 10;
+	margin: 0 0 0 5%;
+  @media screen and (max-width: $breakpoint-medium){
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+.title_2 {
+  display: none;
+  
+  @media screen and (max-width: $breakpoint-medium){
+    display: block;
+    position: relative;
+    float: left;
+    
+    
+    padding-top: 30vw;
+    padding-left: 5vw;
+    margin: 0 0 0 5%;
+
+  }
+}
+
+ .title-heading_2{
+    display: none;
+    @media screen and (max-width: $breakpoint-medium){
+      display: block;
+      font-family: $p600;
+      line-height: 25px;
+      font-size: 26px;
+    }
+  } 
+
+.little_title_2{
+  display: none;
+  @media screen and (max-width: $breakpoint-medium){
+    font-family: $p100;
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 15px;
+    line-height: 17px;
+    z-index: 10;
+    padding-top: 3vw;
+
+  }
 
 }
 
@@ -112,15 +158,24 @@ img {
   font-size: 15px;
   line-height: 16.41px;
   margin-left: 1%;
+  margin-top:2%;
+  
+  @media screen and (max-width: $breakpoint-medium){
+     padding: 2% 0 5vh 5%;
+     font-size: 12px;
+     line-height: 13.18px;
+  }
 }
 
 .pic_TRANS {
-    top: 120px;
-    right: 10%;
-    margin: 0;
-    width: 33vw;
-    height: 33vw;
-    position: absolute;
+	display: none;
+  top: 120px;
+  right: 10%;
+  margin: 0;
+  width: 33vw;
+  height: 33vw;
+  position: absolute;
+
 }
 
 .pic_TRANS div {
@@ -181,13 +236,13 @@ img {
 
 @media screen and (max-width: $breakpoint-medium) {
     .wrap {
-        height: auto;
-        padding-bottom: 200px;
-        margin-bottom: -150px;
+       
     }
 
     .wrap .title {
+    	 	z-index: 10;
         padding-top: 90px;
+        pointer-events: none;
     }
 
     .little_title {
@@ -195,7 +250,7 @@ img {
     }
 
     .pic_TRANS {
-        position: static;
+    		display: block;
         right: auto;
         width: auto;
         height: auto;
@@ -206,11 +261,15 @@ img {
     }
 
     #pic_TRANS_container {
+        
         height: auto;
+        
     }
 
     #pic_TRANS_small {
         display: table;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
         width: 100%;
         table-layout: fixed;
     }
@@ -285,7 +344,7 @@ img {
 #videoBg{
  	width: 100%;
 	position: absolute;
-	margin:-1% 0 0 -35%;
+	margin:-1% 0 0 -30%;
 }
 
 $pop-mobile: 992px;

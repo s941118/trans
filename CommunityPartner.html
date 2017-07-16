@@ -26,7 +26,7 @@
 	
 	<div class="partner_wrap">
 			<div class="main_title" style="margin-left:10vw;"><b>CommunityPartner</b></div>
-		<div id="partner_link" class="partner_btn">
+		<!-- <div id="partner_link" class="partner_btn">
 			<div class="partner_btn_content">
 				<a href="">Organizer</a>
 			</div>
@@ -39,7 +39,7 @@
 			<div class="partner_btn_content">
 				<a href="">Media</a>
 			</div>
-		</div>
+		</div> -->
 		<section class="wrapper_big" style="margin-top: 6%;">
 			<div class="partner_title">
 				Organizer
@@ -98,7 +98,8 @@
 		</section>
 		<section class="wrapper_big">
 			<div class="partner_title">
-				Community Partner<br>
+				Community Partner
+				</div>
 			<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
 				<div class="partner_name">
 					#Co 1<br>
@@ -136,6 +137,67 @@
 					IAPS<br>
 					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
 				</div>
+				<div class="partner_name">
+					#Co 7<br>
+					<img src="../assets/img/partner/media/台大醫工所@2x.png" alt="" >
+					 台大醫工所<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 8<br>
+					<img src="../assets/img/partner/media/銀享全球@2x.png" alt="" >
+					銀享全球<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 9<br>
+					<img src="../assets/img/partner/media/興大醫創@2x.png.png" alt="" >
+					興大醫創<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 10<br>
+					<img src="../assets/img/partner/media/Garage+@2x.png.png" alt="" >
+					Garage+<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 11<br>
+					<img src="../assets/img/partner/media/GITtaiwan@2x.png.png" alt="" >
+					GITtaiwann<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 12<br>
+					<img src="../assets/img/partner/media/Medinno Catalyst 醫療器材催化器@2x.png.png" alt="" >
+					Medinno Catalyst 醫療器材催化<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 13<br>
+					<img src="../assets/img/partner/media/TalkUX@2x.png.png" alt="" >
+					TalkUX<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+				<div class="partner_name">
+					#Co 14<br>
+					<img src="../assets/img/partner/media/Women Who Code Taipei@2x.png.png" alt="" >
+					TWomen Who Code Taipei<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
+			</div>
+		</section>
+		<section class="wrapper_big" style="margin-bottom:200px;">
+			<div class="partner_title">
+				Media
+			</div>
+			<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
+				<div class="partner_name">
+					#Co 1<br>
+					<img src="../assets/img/partner/geneonline.png" alt="" >
+					Geneonline<br>
+					<img src="../assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
+				</div>
 			</div>
 		</section>
 	</div>
@@ -145,4 +207,23 @@
 <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
 <script src="assets/js/vendor/vue.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script>
+$(document).ready(function() {
+	
+	let target
+  $(window).bind('resize', function() {
+      target = $('#partner_link').offset().top
+  }).resize();
+
+  $(window).bind('scroll', function() {
+      let whereAmI = $(this).scrollTop()
+      if (whereAmI < target) {
+          $('#partner_link').removeClass('fixed')
+      } else if (whereAmI > target) {
+          $('#partner_link').addClass('fixed')
+      }
+  }).scroll();
+  
+})
+</script>
 </html>

@@ -17,6 +17,7 @@
         &>* {
             flex: 0 0 auto;
         }
+
     }
 }
 
@@ -34,6 +35,9 @@
 
         h2 {
             font-size: 28px;
+            @media screen and (max-width: $breakpoint-small) {
+             margin: 10% 10% 10% 10%;
+         }
         }
 
         img {
@@ -91,12 +95,16 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: 17px 0;
-        box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 0 0 rgba(0, 0, 0, .3);
         font-family: $p200;
         color: #4d4d4d;
 
         &>* {
             padding: 0 15px;
+        }
+        @media screen and (max-width: $breakpoint-small) {
+            border-bottom:1px solid rgba(0, 0, 0, .5);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0);
         }
     }
 
@@ -202,6 +210,7 @@
     .agenda-wrap {
         .title {
             text-align: center;
+
 
             * {
                 width: 100%;
