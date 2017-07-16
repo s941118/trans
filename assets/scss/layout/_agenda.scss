@@ -135,7 +135,9 @@
 
     .tr-toggle {
         display: none;
-        flex: 0 0 50px;
+        position: absolute;
+        right: 0;
+        margin-top: -10px;
         text-align: center;
 
         .toggle-button {
@@ -157,7 +159,11 @@
 
     .agenda-table {
         .tr-content {
-            display: none;
+            flex: 1 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -228,24 +234,73 @@
     }
 
     .agenda-table {
-        .tr.toggled {
-            .toggle-button {
-                transform: rotate(45deg);
-            }
-        }
-
         .tr-toggle {
             display: block;
         }
 
         .tr-speaker {
-            display: none;
+            flex: 0 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: all 0.3s ease;
         }
 
         .tr-title {
             flex-wrap: wrap;
-            flex: 0 0 calc(100% - 190px);
+            flex: 0 0 calc(100% - 150px);
             text-align: left;
+        }
+
+        .tr.toggled {
+            flex-wrap: wrap;
+            padding-bottom: 0;
+
+            .toggle-button {
+                transform: rotate(45deg);
+            }
+
+            .tr-content {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                margin-top: 10px;
+            }
+
+            .tr-content,
+            .tr-speaker {
+                display: flex;
+                visibility: visible;
+                height: auto;
+                opacity: 1;
+                color: black;
+                flex: 0 0 100%;
+                padding: 10px;
+                padding-left: 165px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+
+            .tr-speaker {
+                padding-bottom: 17px;
+                text-align: left;
+            }
+
+            .tr-content:before,
+            .tr-speaker:before {
+                position: absolute;
+                display: inline-block;
+                font-size: 15px;
+                margin-left: -135px;
+            }
+
+            .tr-content:before {
+                content: "CONTENT";
+            }
+            .tr-speaker:before {
+                content: "SPEAKER";
+            }
+            .tr-speaker:after {
+                content: "\00a0";
+            }
         }
     }
 }
