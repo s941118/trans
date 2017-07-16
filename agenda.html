@@ -63,14 +63,14 @@
         </div>
       </div>
       <div v-if="mainStageDay === 1" class="agenda-table">
-        <div class="tr th">
+        <div class="agenda-tr th">
           <div class="tr-time">TIME</div>
           <div class="tr-title">TITLE</div>
           <div class="tr-content">CONTENT</div>
           <div class="tr-speaker">SPEAKER</div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">09:30-10:00</div>
           <div class="tr-title">
             Welcome Address
@@ -82,7 +82,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">10:00-11:00</div>
           <div class="tr-title">
             Keynote Speech
@@ -102,7 +102,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">11:10-12:00</div>
           <div class="tr-title">
             Panel Talk
@@ -123,7 +123,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">12:00-12:20</div>
           <div class="tr-title">
             Keynote
@@ -139,7 +139,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">12:20-14:00</div>
           <div class="tr-title">
             Rest and Refuel
@@ -151,7 +151,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">14:00-15:10</div>
           <div class="tr-title">
             Panel Talk
@@ -175,7 +175,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">15:20-15:45</div>
           <div class="tr-title">
             Fireside Chat
@@ -190,7 +190,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">15:50-17:50 </div>
           <div class="tr-title">
             Pitch Arena
@@ -202,7 +202,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">18:00-18:40</div>
           <div class="tr-title">
             Keynote
@@ -222,14 +222,14 @@
         </div>
       </div>
       <div v-if="mainStageDay === 2" class="agenda-table">
-        <div class="tr th">
+        <div class="agenda-tr th">
           <div class="tr-time">TIME</div>
           <div class="tr-title">TITLE</div>
           <div class="tr-content">CONTENT</div>
           <div class="tr-speaker">SPEAKER</div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">09:00-10:00</div>
           <div class="tr-title">
             Keynote Speech
@@ -249,7 +249,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">10:10-11:00</div>
           <div class="tr-title">
             Panel Talk
@@ -270,7 +270,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">11:10-12:20</div>
           <div class="tr-title">
             Panel Talk
@@ -294,7 +294,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">12:20-14:00</div>
           <div class="tr-title">
             Rest and Refuel
@@ -305,7 +305,7 @@
           </div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">14:00-15:10</div>
           <div class="tr-title">
             Keynote
@@ -325,7 +325,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">14:50-16:00</div>
           <div class="tr-title">
             Panel Talk
@@ -351,7 +351,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">16:10-17:00</div>
           <div class="tr-title">
             Panel Talk
@@ -371,7 +371,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">17:20-18:10</div>
           <div class="tr-title">
             Keynote
@@ -392,7 +392,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">18:10-18:25</div>
           <div class="tr-title">
             Ending Remarks
@@ -422,14 +422,14 @@
         </div>
       </div>
       <div v-if="sideStageDay === 1" class="agenda-table">
-        <div class="tr th">
+        <div class="agenda-tr th">
           <div class="tr-time">TIME</div>
           <div class="tr-title">TITLE</div>
           <div class="tr-content">CONTENT</div>
           <div class="tr-speaker">SPEAKER</div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">10:15-10:30</div>
           <div class="tr-title">
             Welcome Address
@@ -441,7 +441,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">10:30-12:30</div>
           <div class="tr-title">
             Bugle Call for the Next Generation
@@ -455,7 +455,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">12:30-14:00</div>
           <div class="tr-title">
             Rest and Refuel
@@ -467,7 +467,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">14:00-15:00</div>
           <div class="tr-title">
             Keynote Speech
@@ -485,7 +485,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">15:10-15:40</div>
           <div class="tr-title">
             The Battle Bay: Survival of the Fittest
@@ -499,7 +499,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">16:00 - 17:00</div>
           <div class="tr-title">
             The Guidance from Wise Men
@@ -515,14 +515,14 @@
         </div>
       </div>
       <div v-if="sideStageDay === 2" class="agenda-table">
-        <div class="tr th">
+        <div class="agenda-tr th">
           <div class="tr-time">TIME</div>
           <div class="tr-title">TITLE</div>
           <div class="tr-content">CONTENT</div>
           <div class="tr-speaker">SPEAKER</div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">09:15-09:30</div>
           <div class="tr-title">
             Welcome Address
@@ -533,7 +533,7 @@
           </div>
           <div class="tr-toggle"></div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">09:30-12:30</div>
           <div class="tr-title">
             Bugle Call for the Next Generation
@@ -547,7 +547,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">12:30-14:00</div>
           <div class="tr-title">
             Rest and Refuel
@@ -559,7 +559,7 @@
           <div class="tr-toggle">
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">14:00-15:40</div>
           <div class="tr-title">
             Keynote Speech
@@ -589,7 +589,7 @@
             <button class="toggle-button" type="button" @click="toggle($event)">+</button>
           </div>
         </div>
-        <div class="tr">
+        <div class="agenda-tr">
           <div class="tr-time">16:00-17:00</div>
           <div class="tr-title">
             The Guidance from Wise Men
