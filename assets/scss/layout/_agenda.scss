@@ -157,9 +157,8 @@
             padding: 23px;
             padding-left: 50px;
             padding-right: 50px;
-
             .text {
-            	order: 2;
+                order: 2;
                 display: block;
                 float: none;
                 width: 100%;
@@ -172,7 +171,7 @@
             }
 
             .image {
-            	order: 1;
+                order: 1;
                 display: block;
                 float: none;
                 width: 100%;
@@ -181,9 +180,48 @@
         }
     }
 
+    #mainStageAgenda {
+        background: transparent;
+        padding-top: 30px;
+    }
+
+    .agenda-tab {
+        .time {
+            .daytitle {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .date {
+                font-size: 11px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .agenda-wrap {
+        .title {
+            text-align: center;
+
+            * {
+                width: 100%;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
     .agenda-table {
         .tr-speaker {
             display: none;
+        }
+
+        .tr-title {
+        	flex-wrap: wrap;
+            flex: 0 0 calc(100% - 140px);
+            text-align: left;
         }
     }
 }

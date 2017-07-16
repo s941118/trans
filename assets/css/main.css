@@ -1362,8 +1362,32 @@ footer > .mobile-only > .links {
       float: none;
       width: 100%;
       text-align: center; }
+  #mainStageAgenda {
+    background: transparent;
+    padding-top: 30px; }
+  .agenda-tab .time .daytitle {
+    font-size: 26px;
+    font-weight: bold; }
+  .agenda-tab .time .date {
+    font-size: 11px;
+    font-weight: bold; }
+  .agenda-wrap .title {
+    text-align: center; }
+    .agenda-wrap .title * {
+      width: 100%; }
+    .agenda-wrap .title img {
+      display: none; }
   .agenda-table .tr-speaker {
-    display: none; } }
+    display: none; }
+  .agenda-table .tr-title {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 calc(100% - 140px);
+    -ms-flex: 0 0 calc(100% - 140px);
+    flex: 0 0 calc(100% - 140px);
+    text-align: left; } }
 
 .register_bg {
   background-color: rgba(255, 255, 255, 0.6);
