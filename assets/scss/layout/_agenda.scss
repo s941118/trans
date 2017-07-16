@@ -86,12 +86,12 @@
 .agenda-table {
     margin-bottom: 40vh;
 
-    .tr {
+    .agenda-tr {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         padding: 17px 0;
-        box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, .3);
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.2);
         font-family: $p200;
         color: #4d4d4d;
 
@@ -132,6 +132,22 @@
         font-family: $p200;
         text-align: right;
     }
+
+    .tr-toggle {
+        display: none;
+        position: absolute;
+        right: 0;
+        margin-top: -10px;
+        text-align: center;
+
+        .toggle-button {
+            font-size: 25px;
+            font-weight: lighter;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    }
 }
 
 @media screen and (max-width: $breakpoint-medium) {
@@ -143,7 +159,11 @@
 
     .agenda-table {
         .tr-content {
-            display: none;
+            flex: 1 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
     }
 }
@@ -214,14 +234,75 @@
     }
 
     .agenda-table {
+        margin-bottom: 25vh;
+
+        .tr-toggle {
+            display: block;
+        }
+
         .tr-speaker {
-            display: none;
+            flex: 0 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
         }
 
         .tr-title {
-        	flex-wrap: wrap;
-            flex: 0 0 calc(100% - 140px);
+            flex-wrap: wrap;
+            flex: 0 0 calc(100% - 150px);
             text-align: left;
+        }
+
+        .agenda-tr.toggled {
+            flex-wrap: wrap;
+            padding-bottom: 0;
+
+            .toggle-button {
+                transform: rotate(45deg);
+            }
+
+            .tr-content {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                margin-top: 10px;
+            }
+
+            .tr-content,
+            .tr-speaker {
+                display: flex;
+                visibility: visible;
+                height: auto;
+                opacity: 1;
+                color: black;
+                flex: 0 0 100%;
+                padding: 10px;
+                padding-left: 165px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+
+            .tr-speaker {
+                padding-bottom: 17px;
+                text-align: left;
+            }
+
+            .tr-content:before,
+            .tr-speaker:before {
+                position: absolute;
+                display: inline-block;
+                font-size: 15px;
+                margin-left: -135px;
+            }
+
+            .tr-content:before {
+                content: "CONTENT";
+            }
+            .tr-speaker:before {
+                content: "SPEAKER";
+            }
+            .tr-speaker:after {
+                content: "\00a0";
+            }
         }
     }
 }
