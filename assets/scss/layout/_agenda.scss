@@ -1,278 +1,227 @@
 .agenda-link {
-	
-	.box {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background-color: #fff;
-		border-radius: 6px;
-		box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
-		margin: 20px auto;
-		width: 100%;
-		max-width: 800px;
-		padding: 10px 30px;
-		font-family: $p300;
-		font-size: 21px;
 
-		& > * {
-			flex: 0 0 auto;
-		}
-	}
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+        margin: 20px auto;
+        width: 100%;
+        max-width: 800px;
+        padding: 10px 30px;
+        font-family: $p300;
+        font-size: 21px;
+
+        &>* {
+            flex: 0 0 auto;
+        }
+    }
 }
 
 .agenda-wrap {
-	margin-top: 15%;
+    margin-top: 15%;
 
-	.title {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		background-color: #fff;
-		margin-bottom: 50px;
-		font-family: $p300;
-		font-size: 28px;
+    .title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-bottom: 50px;
+        font-family: $p300;
+        font-size: 28px;
 
-		h2 {
-			font-size: 28px;
-		}
+        h2 {
+            font-size: 28px;
+        }
 
-		img {
-			max-width: 300px;
-		}
-	}
+        img {
+            max-width: 300px;
+        }
+    }
 }
 
 .agenda-tab {
-	font-size: 0;
-	margin-bottom: 25px;
+    font-size: 0;
+    margin-bottom: 25px;
 
-	.tab-btn {
-		display: inline-block;
-		font-size: 15px;
-		font-family: $p400;
-		padding: 7px 15px;
-		box-shadow: 0 0 0 1px #000;
-	}
+    .tab-btn {
+        display: inline-block;
+        font-size: 15px;
+        font-family: $p400;
+        padding: 7px 15px;
+        box-shadow: 0 0 0 1px #000;
+    }
 
-	.tab-btn.active {
-		background-color: #000;
-		color: #FFF;
-	}
+    .tab-btn.active {
+        background-color: #000;
+        color: #FFF;
+    }
 
-	.time {
-		float: right;
-		font-family: $p400;
+    .time {
+        float: right;
+        font-family: $p400;
 
-		.daytitle {
-			font-size: 32px;
-			display: inline-block;
-			font-family: $p400;
-		}
+        .daytitle {
+            font-size: 32px;
+            display: inline-block;
+            font-family: $p400;
+        }
 
-		.date {
-			display: inline-block;
-			font-size: 16px;
-			margin-left: 15px;
-			font-family: $p400;
-			
-			p {
-				vertical-align:super;
-				font-size: 9px;
-			}
-		}
-	}
+        .date {
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 15px;
+            font-family: $p400;
+
+            p {
+                vertical-align: super;
+                font-size: 9px;
+            }
+        }
+    }
 }
 
 .agenda-table {
-	margin-bottom: 40vh;
+    margin-bottom: 40vh;
 
-	.tr {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		padding: 17px 0;
-		box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, .3);	
-		font-family: $p200;
-		color: #4d4d4d;
+    .tr {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 17px 0;
+        box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, .3);
+        font-family: $p200;
+        color: #4d4d4d;
 
-		& > * {
-			padding: 0 15px;
-		}
-	}
+        &>* {
+            padding: 0 15px;
+        }
+    }
 
-	.th > * {
-		font-size: 16px!important;
-	}
+    .th>* {
+        font-size: 16px!important;
+    }
 
-	.tr-time {
-		flex: 0 0 140px;
-		font-size: 14px;
-		font-family: $p600;
-		text-align: center;
-	}
+    .tr-time {
+        flex: 0 0 140px;
+        font-size: 14px;
+        font-family: $p600;
+        text-align: center;
+    }
 
-	.tr-title {
-		flex: 0 0 320px;
-		font-size: 16px;
-		font-family: $p200;
-		line-height: 19.12px;
-	}
+    .tr-title {
+        flex: 0 0 320px;
+        font-size: 16px;
+        font-family: $p200;
+        line-height: 19.12px;
+    }
 
-	.tr-content {
-		flex: 1 0 300px;
-		font-size: 12px;
-		font-family: $p200;
-		padding-right: 20px;
-		line-height: 15.12px;
-	}
+    .tr-content {
+        flex: 1 0 300px;
+        font-size: 12px;
+        font-family: $p200;
+        padding-right: 20px;
+        line-height: 15.12px;
+    }
 
-	.tr-speaker {
-		flex: 0 0 150px;
-		font-size: 12px;
-		font-family: $p200;
-		text-align: right;
-	}
+    .tr-speaker {
+        flex: 0 0 150px;
+        font-size: 12px;
+        font-family: $p200;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .agenda-wrap {
+        .title {
+            background: transparent;
+        }
+    }
+
+    .agenda-table {
+        .tr-content {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: $breakpoint-small) {
- .agenda-link {
-	
-	.box {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background-color: #fff;
-		border-radius: 6px;
-		box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
-		margin: 20px auto;
-		width: 100%;
-		max-width: 800px;
-		padding: 10px 30px;
-		font-family: $p300;
-		font-size: 18px;
-		img {
-			max-width: 200px;
-		}
+    .agenda-link {
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            padding: 23px;
+            padding-left: 50px;
+            padding-right: 50px;
+            .text {
+                order: 2;
+                display: block;
+                float: none;
+                width: 100%;
+                flex: none;
+                text-align: center;
 
-		& > * {
-			flex: 0 0 auto;
-		}
-	}
+                br {
+                    display: none;
+                }
+            }
+
+            .image {
+                order: 1;
+                display: block;
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    #mainStageAgenda {
+        background: transparent;
+        padding-top: 30px;
+    }
+
+    .agenda-tab {
+        .time {
+            .daytitle {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .date {
+                font-size: 11px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .agenda-wrap {
+        .title {
+            text-align: center;
+
+            * {
+                width: 100%;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .agenda-table {
+        .tr-speaker {
+            display: none;
+        }
+
+        .tr-title {
+        	flex-wrap: wrap;
+            flex: 0 0 calc(100% - 140px);
+            text-align: left;
+        }
+    }
 }
-
-.agenda-wrap {
-	margin-top: 15%;
-
-	.title {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		background-color: #fff;
-		margin:5px 5px 50px 10px;
-		font-family: $p300;
-		font-size: 18px;
-
-		h2 {
-			font-size: 20px;
-		}
-
-		img {
-			max-width: 200px;
-		}
-	}
-}
-
-.agenda-tab {
-	font-size: 0;
-	margin-bottom: 25px;
-
-	.tab-btn {
-		display: inline-block;
-		font-size: 15px;
-		font-family: $p400;
-		padding: 7px 15px;
-		box-shadow: 0 0 0 1px #000;
-	}
-
-	.tab-btn.active {
-		background-color: #000;
-		color: #FFF;
-	}
-
-	.time {
-		float: right;
-		font-family: $p400;
-
-		.daytitle {
-			font-size: 30px;
-			display: inline-block;
-			font-family: $p400;
-		}
-
-		.date {
-			display: inline-block;
-			font-size: 16px;
-			margin-left: 15px;
-			font-family: $p400;
-			
-			p {
-				vertical-align:super;
-				font-size: 9px;
-			}
-		}
-	}
-}
-
-.agenda-table {
-	margin-bottom: 40vh;
-
-	.tr {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		padding: 17px 0;
-		box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, .3);	
-		font-family: $p200;
-		color: #4d4d4d;
-
-		& > * {
-			padding: 0 15px;
-		}
-	}
-
-	.th > * {
-		font-size: 16px!important;
-	}
-
-	.tr-time {
-		flex: 0 0 140px;
-		font-size: 14px;
-		font-family: $p600;
-		text-align: center;
-	}
-
-	.tr-title {
-		flex: 0 0 320px;
-		font-size: 16px;
-		font-family: $p200;
-		line-height: 19.12px;
-	}
-
-	.tr-content {
-		flex: 1 0 300px;
-		font-size: 12px;
-		font-family: $p200;
-		padding-right: 20px;
-		line-height: 15.12px;
-	}
-
-	.tr-speaker {
-		flex: 0 0 150px;
-		font-size: 12px;
-		font-family: $p200;
-		text-align: right;
-	}
-}
-
-
- }

@@ -29,21 +29,21 @@
     <div class="main_title"><b>Agenda</b></div>
 		<div class="agenda-link">
 			<a class="box" href="#mainStageAgenda">
-				<div class="left">
+				<div class="text">
 					Main Stage<br>
 					Agenda >>
 				</div>
-				<div class="right">
+				<div class="image">
 					<img src="assets/img/agenda/map1.svg" alt="">
 				</div>
 			</a>
 			<a class="box" href="#sideStageAgenda">
-				<div class="left">
+				<div class="text">
 					TRANS Salon<br>
 					Agenda >>
 
 				</div>
-				<div class="right">
+				<div class="image">
 					<img src="assets/img/agenda/map2.svg" alt="">
 				</div>
 			</a>
@@ -349,10 +349,10 @@
 				<div @click="changeDay('sideStageDay', 1)" class="tab-btn" :class="{ active: sideStageDay === 1 }">Day 1</div>
 				<div @click="changeDay('sideStageDay', 2)" class="tab-btn" :class="{ active: sideStageDay === 2 }">Day 2</div>
 				<div class="time">
-				<div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
-					<div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
-					<div v-if="mainStageDay === 1" class="date">26 TH August</div>
-					<div v-if="mainStageDay === 2" class="date">27 TH August</div>
+				<div v-if="sideStageDay === 1" class="daytitle">Day 1</div>
+					<div v-if="sideStageDay === 2" class="daytitle">Day 2</div>
+					<div v-if="sideStageDay === 1" class="date">26 TH August</div>
+					<div v-if="sideStageDay === 2" class="date">27 TH August</div>
 				</div>
 			</div>
 			<div v-if="sideStageDay === 1" class="agenda-table">
@@ -457,7 +457,7 @@
 					</div>
 				</div>
 				<div class="tr">
-					<div class="tr-time">9:30-12:30</div>
+					<div class="tr-time">09:30-12:30</div>
 					<div class="tr-title">
 						Bugle Call for the Next Generation
 					</div>
