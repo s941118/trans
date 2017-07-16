@@ -279,9 +279,10 @@ a {
     color: #ffffff; }
 
 .register_btn {
+  z-index: 10;
   font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-size: 17px;
-  padding: 15px;
+  padding: 1px;
   background-color: white;
   width: 350px;
   border-radius: 30px;
@@ -1313,6 +1314,146 @@ footer > .mobile-only > .links {
     font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
     text-align: right; }
 
+@media screen and (max-width: 768px) {
+  .agenda-link .box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, 0.05);
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 30px;
+    font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+    font-size: 18px; }
+    .agenda-link .box img {
+      max-width: 200px; }
+    .agenda-link .box > * {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto; }
+  .agenda-wrap {
+    margin-top: 15%; }
+    .agenda-wrap .title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      background-color: #fff;
+      margin: 5px 5px 50px 10px;
+      font-family: BasicSansAlt-Regular, Noto Sans TC, PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+      font-size: 18px; }
+      .agenda-wrap .title h2 {
+        font-size: 20px; }
+      .agenda-wrap .title img {
+        max-width: 200px; }
+  .agenda-tab {
+    font-size: 0;
+    margin-bottom: 25px; }
+    .agenda-tab .tab-btn {
+      display: inline-block;
+      font-size: 15px;
+      font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+      padding: 7px 15px;
+      -webkit-box-shadow: 0 0 0 1px #000;
+      box-shadow: 0 0 0 1px #000; }
+    .agenda-tab .tab-btn.active {
+      background-color: #000;
+      color: #FFF; }
+    .agenda-tab .time {
+      float: right;
+      font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+      .agenda-tab .time .daytitle {
+        font-size: 30px;
+        display: inline-block;
+        font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+      .agenda-tab .time .date {
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 15px;
+        font-family: BasicSansAlt-SemiBold, Noto Sans TC, PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei; }
+        .agenda-tab .time .date p {
+          vertical-align: super;
+          font-size: 9px; }
+  .agenda-table {
+    margin-bottom: 40vh; }
+    .agenda-table .tr {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 17px 0;
+      -webkit-box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.3);
+      font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+      color: #4d4d4d; }
+      .agenda-table .tr > * {
+        padding: 0 15px; }
+    .agenda-table .th > * {
+      font-size: 16px !important; }
+    .agenda-table .tr-time {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 140px;
+      -ms-flex: 0 0 140px;
+      flex: 0 0 140px;
+      font-size: 14px;
+      font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+      text-align: center; }
+    .agenda-table .tr-title {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 320px;
+      -ms-flex: 0 0 320px;
+      flex: 0 0 320px;
+      font-size: 16px;
+      font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+      line-height: 19.12px; }
+    .agenda-table .tr-content {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 300px;
+      -ms-flex: 1 0 300px;
+      flex: 1 0 300px;
+      font-size: 12px;
+      font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+      padding-right: 20px;
+      line-height: 15.12px; }
+    .agenda-table .tr-speaker {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 150px;
+      -ms-flex: 0 0 150px;
+      flex: 0 0 150px;
+      font-size: 12px;
+      font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+      text-align: right; } }
+
 .register_bg {
   background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
@@ -1579,7 +1720,7 @@ img {
   background-size: contain; }
 
 .pic1 {
-  height: 250px;
+  height: 300px;
   overflow: hidden; }
 
 .main_title {
@@ -1610,14 +1751,18 @@ img {
   height: 100vh; }
 
 .wrap .title {
+  position: relative;
+  float: left;
   font-weight: bolder;
   font-size: 37px;
   line-height: 48.72px;
   padding-top: 10vw;
   padding-bottom: 10vw;
-  font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei; }
+  font-family: BasicSansAlt-Black, Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+  z-index: 10; }
 
 .little_title {
+  position: absolute;
   font-weight: normal;
   display: inline-block;
   font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
@@ -1770,3 +1915,8 @@ img {
 
 .go-back-btn:hover {
   opacity: 1; }
+
+#videoBg {
+  width: 100%;
+  position: absolute;
+  margin: -1% 0 0 -35%; }

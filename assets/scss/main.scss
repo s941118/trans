@@ -92,21 +92,26 @@ img {
 }
 
 .wrap .title {
-    font-weight: bolder;
-    font-size: 37px;
-    line-height: 48.72px;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    font-family: $p600;
+  position: relative;
+  float: left;
+  font-weight: bolder;
+  font-size: 37px;
+  line-height: 48.72px;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  font-family: $p600;
+  z-index: 10;
+
 }
 
 .little_title {
-    font-weight: normal;
-    display: inline-block;
-    font-family: $p200;
-    font-size: 15px;
-    line-height: 16.41px;
-    margin-left: 1%;
+	position: absolute;
+  font-weight: normal;
+  display: inline-block;
+  font-family: $p200;
+  font-size: 15px;
+  line-height: 16.41px;
+  margin-left: 1%;
 }
 
 .pic_TRANS {
@@ -275,4 +280,10 @@ img {
 
 .go-back-btn:hover {
     opacity: 1;
+}
+
+#videoBg{
+ 	width: 100%;
+	position: absolute;
+	margin:-1% 0 0 -35%;
 }
