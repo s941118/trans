@@ -1325,9 +1325,9 @@ footer > .mobile-only > .links {
       font-weight: lighter;
       background: transparent;
       cursor: pointer;
-      -webkit-transition: .3 ease;
-      -o-transition: .3 ease;
-      transition: .3 ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
 @media screen and (max-width: 992px) {
   .agenda-wrap .title {
@@ -1392,6 +1392,10 @@ footer > .mobile-only > .links {
       width: 100%; }
     .agenda-wrap .title img {
       display: none; }
+  .agenda-table .tr.toggled .toggle-button {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
   .agenda-table .tr-toggle {
     display: block; }
   .agenda-table .tr-speaker {
