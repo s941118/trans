@@ -1339,9 +1339,9 @@ footer > .mobile-only > .links {
     visibility: hidden;
     height: 0;
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; } }
+    -webkit-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease; } }
 
 @media screen and (max-width: 768px) {
   .agenda-link .box {
@@ -1410,9 +1410,9 @@ footer > .mobile-only > .links {
     visibility: hidden;
     height: 0;
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    -webkit-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease; }
   .agenda-table .tr-title {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
