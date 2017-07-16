@@ -13,7 +13,7 @@ $(document).ready(function() {
             },
 
             toggle: function(event) {
-                $(event.currentTarget).closest('.tr').toggleClass('toggled');
+                $(event.currentTarget).closest('.agenda-tr').toggleClass('toggled');
             }
         }
 

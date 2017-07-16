@@ -86,7 +86,7 @@
 .agenda-table {
     margin-bottom: 40vh;
 
-    .tr {
+    .agenda-tr {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -252,7 +252,7 @@
             text-align: left;
         }
 
-        .tr.toggled {
+        .agenda-tr.toggled {
             flex-wrap: wrap;
             padding-bottom: 0;
 
