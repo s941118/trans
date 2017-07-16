@@ -2384,16 +2384,25 @@ small {
 .TRANS_img_content {
   background-color: #000000;
   width: 100%; }
-  .TRANS_img_content a img {
-    -o-object-fit: contain;
-    object-fit: contain; }
+  .TRANS_img_content a {
+    overflow: hidden; }
+    .TRANS_img_content a img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      -webkit-transition: .8s ease;
+      -o-transition: .8s ease;
+      transition: .8s ease; }
+  .TRANS_img_content a:hover img {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1); }
 
 .mouse {
   position: absolute;
   font-size: 14px;
   font-family: BasicSansAlt-Light, Noto Sans TC, PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
   color: white;
-  margin: 30vh 0 10% 10%; }
+  margin: 30vh 0 10% 10%;
+  z-index: 3; }
   .mouse img {
     width: 2%;
     margin-right: 10px; }
