@@ -151,7 +151,7 @@
             font-weight: lighter;
             background: transparent;
             cursor: pointer;
-            transition: .3 ease;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -237,6 +237,12 @@
     }
 
     .agenda-table {
+        .tr.toggled {
+            .toggle-button {
+                transform: rotate(45deg);
+            }
+        }
+
         .tr-toggle {
             display: block;
         }
