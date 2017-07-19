@@ -48,7 +48,6 @@ img {
 
 .img-bg-cover {
     background-size: cover;
-
 }
 
 .img-bg-contain {
@@ -79,6 +78,7 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .wrapper_big {
     max-width: 1200px;
     margin: 0 auto;
@@ -175,7 +175,6 @@ img {
   width: 33vw;
   height: 33vw;
   position: absolute;
-
 }
 
 .pic_TRANS div {
@@ -260,10 +259,8 @@ img {
         display: none;
     }
 
-    #pic_TRANS_container {
-        
+    #pic_TRANS_container {        
         height: auto;
-        
     }
 
     #pic_TRANS_small {

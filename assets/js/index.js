@@ -30,6 +30,21 @@ $(document).ready(function() {
         }
     });
 
+    // CommunityPartner
+    var $partnerLink = $('#partner_link');
+    if ($partnerLink.length > 0) {
+        $(window).bind('scroll', function() {
+            var whereAmI = $(this).scrollTop(),
+                target = $('.main_title').offset().top;
+            
+            if (whereAmI < target) {
+                $('#partner_link').removeClass('fixed')
+            } else if (whereAmI > target) {
+                $('#partner_link').addClass('fixed')
+            }
+        }).scroll();
+    }
+
     //議程的tab
     $('.tabgroup > div').hide();
     $('.tabgroup > div:first-of-type').show();
